@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular11Crud",
+            "outputPath": "public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Angular11Crud"
+  "defaultProject": "Angular11Crud",
+  "cli": {
+    "analytics": "346da427-b913-4f21-808e-a165c4ae58aa"
+  }
 }

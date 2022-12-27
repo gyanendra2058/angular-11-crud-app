@@ -1,10 +1,84 @@
-import { Component } from '@angular/core';
+import {
+  Compiler,
+  Component,
+  Injector,
+  NgModuleFactory,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
+import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Angular 11 Crud';
+  @ViewChild('mainContainer', { read: ViewContainerRef })
+  container!: ViewContainerRef;
+
+  constructor(
+    private _compiler: Compiler,
+    private _injector: Injector,
+    private readonly _router: Router
+  ) {
+    this._router.events.subscribe(
+      async (routeEvent: Event) =>
+        await this._loadTemplatesModuleDynamically(routeEvent)
+    );
+  }
+
+  private async _loadTemplatesModuleDynamically(
+    routeEvent: Event
+  ): Promise<any> {
+    if (routeEvent instanceof NavigationEnd) {
+      if (routeEvent.url === '/#/alerts') {
+        await this._loadAlertTemplatesModule();
+      } else if (routeEvent.url === '/#/cases') {
+        await this._loadCaseTemplatesModule();
+      } else {
+        // TODO: Load page not found
+      }
+    }
+  }
+
+  async _loadAlertTemplatesModule() {
+    const { AlertTemplatesModule } = await import(
+      './components/alert-templates/alert-templates.module'
+    );
+
+    const { AlertTemplatesComponent } = await import(
+      './components/alert-templates/alert-templates.component'
+    );
+    const moduleFactory = await this.loadModuleFactory(AlertTemplatesModule);
+    const moduleRef = moduleFactory.create(this._injector);
+    const factory = moduleRef.componentFactoryResolver.resolveComponentFactory(
+      AlertTemplatesComponent
+    );
+    this.container.createComponent(factory);
+  }
+
+  async _loadCaseTemplatesModule() {
+    const { CaseTemplatesModule } = await import(
+      './components/case-templates/case-templates.module'
+    );
+
+    const { CaseTemplatesComponent } = await import(
+      './components/case-templates/case-templates.component'
+    );
+    const moduleFactory = await this.loadModuleFactory(CaseTemplatesModule);
+    const moduleRef = moduleFactory.create(this._injector);
+    const factory = moduleRef.componentFactoryResolver.resolveComponentFactory(
+      CaseTemplatesComponent
+    );
+    this.container.createComponent(factory);
+  }
+
+  private async loadModuleFactory(t: any) {
+    if (t instanceof NgModuleFactory) {
+      return t;
+    } else {
+      return await this._compiler.compileModuleAsync(t);
+    }
+  }
 }
