@@ -5,13 +5,15 @@ import { AlertTemplatesRoutingModule } from './alert-templates-routing.module';
 import { AlertTemplatesComponent } from './alert-templates.component';
 import { NgxsModule } from '@ngxs/store';
 import { AlertTemplatesState } from 'src/app/store/alert-templates/alert-templates.state';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [AlertTemplatesComponent],
   imports: [
     CommonModule,
+    TranslateModule,
     AlertTemplatesRoutingModule,
     NgxsModule.forFeature([AlertTemplatesState]),
-  ],
+  ]
 })
 export class AlertTemplatesModule {}

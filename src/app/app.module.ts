@@ -1,14 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgxsModule, NoopNgxsExecutionStrategy } from '@ngxs/store';
+import { NgxsModule, NoopNgxsExecutionStrategy, Store } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
-
 import { environment } from '../environments/environment';
+import {
+  TranslateModule,
+  TranslateLoader,
+  TranslateService,
+} from '@ngx-translate/core';
+
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { GetTranslations } from './store/app/app.actions';
+import { AppState } from './store/app/app.state';
+
+export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http, 'assets/i18n/locale_', '.json');
+}
+
+export function loadTranslations(store: Store): () => Promise<any> {
+  return () => store.dispatch(new GetTranslations()).toPromise();
+}
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -16,8 +32,17 @@ import { environment } from '../environments/environment';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
+    // all ngx-translate related modules
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (httpLoaderFactory),
+        deps: [HttpClient],
+      },
+    }),
+
     // NGXS related setup
-    NgxsModule.forRoot([], {
+    NgxsModule.forRoot([AppState], {
       executionStrategy: NoopNgxsExecutionStrategy,
     }),
     NgxsLoggerPluginModule.forRoot({
@@ -28,7 +53,12 @@ import { environment } from '../environments/environment';
       disabled: environment.production,
     }),
   ],
-  providers: [],
+  providers: [{
+    provide: APP_INITIALIZER,
+    useFactory: loadTranslations,
+    deps: [Store],
+    multi: true
+  }, TranslateService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
