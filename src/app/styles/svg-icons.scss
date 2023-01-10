@@ -1,0 +1,39 @@
+
+i.gedi-button:hover {
+    stroke: $gray18;
+}
+
+i.gedi-button.button {
+    cursor: pointer;
+    vertical-align: text-bottom;
+    stroke: $gray10;
+}
+
+i.gedi-button.button:hover {
+  stroke: $d-actionable-default;
+}
+
+i.gedi-button {
+    /* These seem like good defaults, feel free to add more classes in this file that override these for other styling that we get from UX. */
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+
+    stroke: $gray18;
+    fill: transparent;
+}
+
+i.gedi-button.expand-button {
+    height: 22px;
+    width: 22px;
+
+    &:not(.open) {
+        transform: rotate(180deg);
+    }
+}
+
+i.gedi-button.menu-button {
+    height: 22px;
+    width: 22px;
+}
+

@@ -7,7 +7,7 @@ export class GotTranslations {
 }
 
 export class GetDynamicCollections {
-  static readonly type = '[App] GetDynamicCollections'
+  static readonly type = '[App] GetDynamicCollections';
   constructor(public lang: string) {
   }
 }

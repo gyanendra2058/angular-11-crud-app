@@ -71,16 +71,16 @@ export abstract class BaseService {
   }
 
   // TODO: NEED TO OVERRIDE THE TENANT ID HERE SOMEHOW FOR NOTES API
-  private httpOptionsForPost(options): any {
+  private httpOptionsForPost(options: any): any {
     return { headers: this.getCommonHeaders(options) };
   }
 
-  private httpOptionsForGet(options): any {
+  private httpOptionsForGet(options: any): any {
     return { headers: this.getCommonHeaders(options) };
   }
 
   // TODO: NEED TO OVERRIDE THE TENANT ID HERE SOMEHOW FOR NOTES API
-  private getCommonHeaders(options): HttpHeaders {
+  private getCommonHeaders(options: any): HttpHeaders {
     let hh = new HttpHeaders();
 
     hh = hh.append('Cache-Control', 'no-cache, no-store');

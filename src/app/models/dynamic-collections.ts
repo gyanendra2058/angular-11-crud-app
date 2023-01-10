@@ -4,7 +4,7 @@ export class DynamicCollections {
     constructor(keys: Map<string, string>) {
         this._collection = keys;
     }
-    public getKey(key: string): string | undefined {
-        return this._collection.get(key);
+    public getValue(key: string): string {
+        return this._collection.get(key) || key;
     }
 }

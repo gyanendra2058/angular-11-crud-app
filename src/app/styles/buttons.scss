@@ -1,0 +1,72 @@
+.apply-button-group {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    border-top: 1px solid #bcc6ce;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.apply-button-group div:not(:last-child) {
+    margin-left: 0.625rem;
+}
+
+.button-call-to-action {
+    background-color: $primary-default !important;
+    color: $white !important;
+    border: 1px solid $primary-default !important;
+    transition: background .4s,border-color .4s,color .4s;
+
+    &:hover {
+        background-color: $primary-hover !important;
+        border: 1px solid $primary-hover !important;
+        color: $white !important;
+    }
+
+    &.dx-state-active {
+
+        background-color: $primary-pressed !important;
+        border: 1px solid $primary-pressed !important;
+        color: $white !important;
+    }
+}
+
+.button-secondary, .dx-page.dx-selection {
+    background-color: $gray4 !important;
+    border: 1px solid $gray4 !important;
+    color: $gray18 !important;
+
+    transition: background .4s,border-color .4s,color .4s;
+
+    &:hover {
+        background-color: $gray6 !important;
+        border: 1px solid $gray6 !important;
+        color: $gray18 !important;
+    }
+
+    &:focus {
+        background-color: $gray8 !important;
+        border: 1px solid $gray8 !important;
+        color: $gray18 !important;
+    }
+}
+
+.button-tertiary {
+    background-color: transparent !important;
+    border: 1px solid $gray8 !important;
+    color: $primary-default !important;
+
+    transition: background .4s,border-color .4s,color .4s;
+
+    &:hover {
+        background-color: $gray4 !important;
+        border: 1px solid $gray8 !important;
+        color: $primary-hover !important;
+    }
+
+    &:focus {
+        background-color: $gray7 !important;
+        border: 1px solid $gray8 !important;
+        color: $primary-pressed !important;
+    }
+}

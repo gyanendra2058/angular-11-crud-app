@@ -14,6 +14,10 @@ import {
   TranslateService,
 } from '@ngx-translate/core';
 
+import { NgxsDispatchPluginModule } from '@ngxs-labs/dispatch-decorator';
+import { NgxsActionsExecutingModule } from '@ngxs-labs/actions-executing';
+import { NgxsSelectSnapshotModule } from '@ngxs-labs/select-snapshot';
+
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { GetTranslations } from './store/app/app.actions';
 import { AppState } from './store/app/app.state';
@@ -45,6 +49,9 @@ export function loadTranslations(store: Store): () => Promise<any> {
     NgxsModule.forRoot([AppState], {
       executionStrategy: NoopNgxsExecutionStrategy,
     }),
+    NgxsSelectSnapshotModule.forRoot(),
+    NgxsActionsExecutingModule.forRoot(),
+    NgxsDispatchPluginModule.forRoot(),
     NgxsLoggerPluginModule.forRoot({
       disabled: environment.production,
     }),

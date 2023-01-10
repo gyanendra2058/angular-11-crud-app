@@ -1,0 +1,2385 @@
+$gedi-font: "gedi";
+
+@font-face {
+    font-family: $gedi-font;
+    src: url("./gedi.ttf?51f1b9562fbec3e6e3bc0e161e327a8e") format("truetype"),
+url("./gedi.woff?51f1b9562fbec3e6e3bc0e161e327a8e") format("woff"),
+url("./gedi.woff2?51f1b9562fbec3e6e3bc0e161e327a8e") format("woff2"),
+url("./gedi.eot?51f1b9562fbec3e6e3bc0e161e327a8e#iefix") format("embedded-opentype"),
+url("./gedi.svg?51f1b9562fbec3e6e3bc0e161e327a8e#gedi") format("svg");
+}
+
+[class^="gedi-"], [class*=" gedi-"] {
+    font-family: gedi !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$gedi-map: (
+    "add-22": "\f101",
+    "add-brush-22": "\f102",
+    "add-column-left": "\f103",
+    "add-column-right": "\f104",
+    "add-details": "\f105",
+    "add-doc": "\f106",
+    "add-record-22": "\f107",
+    "add-row-bottom": "\f108",
+    "add-row-top": "\f109",
+    "add-tab": "\f10a",
+    "add-time-series": "\f10b",
+    "add-to-health-indicator": "\f10c",
+    "add": "\f10d",
+    "added": "\f10e",
+    "administration-32": "\f10f",
+    "ahm": "\f110",
+    "airplane-32": "\f111",
+    "airplane-engine-32": "\f112",
+    "airport-32-copy-13": "\f113",
+    "airport-32": "\f114",
+    "alarm-blocking": "\f115",
+    "alarm-printer": "\f116",
+    "alarm": "\f117",
+    "alert-32": "\f118",
+    "alert-add": "\f119",
+    "alert-query": "\f11a",
+    "alert": "\f11b",
+    "all-points-in-area-22": "\f11c",
+    "alphabet-sort": "\f11d",
+    "ams-tag": "\f11e",
+    "analysis-32": "\f11f",
+    "analytics-32": "\f120",
+    "and-alt": "\f121",
+    "and": "\f122",
+    "apply-analysis": "\f123",
+    "apply-component": "\f124",
+    "apply-template": "\f125",
+    "arrow-down-12": "\f126",
+    "arrow-down": "\f127",
+    "arrow-left-12": "\f128",
+    "arrow-left": "\f129",
+    "arrow-right-12": "\f12a",
+    "arrow-right": "\f12b",
+    "arrow-up-12": "\f12c",
+    "arrow-up": "\f12d",
+    "asset-12": "\f12e",
+    "asset-22": "\f12f",
+    "asset-32": "\f130",
+    "asset-add": "\f131",
+    "asset-group-12": "\f132",
+    "asset-group": "\f133",
+    "asset": "\f134",
+    "associated-links": "\f135",
+    "attachment": "\f136",
+    "attribute-32": "\f137",
+    "attribute-hierarchy": "\f138",
+    "attribute-set": "\f139",
+    "attribute": "\f13a",
+    "automobile-32": "\f13b",
+    "average": "\f13c",
+    "back-to-browser": "\f13d",
+    "base-rule": "\f13e",
+    "below-t-min": "\f13f",
+    "bento-box": "\f140",
+    "boiler-32": "\f141",
+    "bookmark": "\f142",
+    "bring-to-front-22": "\f143",
+    "brush-22": "\f144",
+    "brush": "\f145",
+    "bug-32": "\f146",
+    "bulk-data": "\f147",
+    "calculator": "\f148",
+    "calendar-32": "\f149",
+    "calendar-add": "\f14a",
+    "calendar-ban": "\f14b",
+    "calendar-production-event": "\f14c",
+    "calendar-remove": "\f14d",
+    "calendar": "\f14e",
+    "camera-22": "\f14f",
+    "camera-flip-22": "\f150",
+    "camera-flip-32": "\f151",
+    "camera": "\f152",
+    "card-add-22": "\f153",
+    "cards-22": "\f154",
+    "cards-menu-22": "\f155",
+    "cards": "\f156",
+    "cart": "\f157",
+    "case_query": "\f158",
+    "case-add-22": "\f159",
+    "case-add": "\f15a",
+    "case-edit": "\f15b",
+    "case-node": "\f15c",
+    "case": "\f15d",
+    "cases-32": "\f15e",
+    "catalog-32": "\f15f",
+    "cell-tower-32": "\f160",
+    "change-state": "\f161",
+    "chart-bar": "\f162",
+    "chart-line-22": "\f163",
+    "chart-line": "\f164",
+    "chart-pie": "\f165",
+    "chart-residual-22": "\f166",
+    "chart-residual": "\f167",
+    "chart-settings-22": "\f168",
+    "chart-trend": "\f169",
+    "chat-32": "\f16a",
+    "check": "\f16b",
+    "chevron-down": "\f16c",
+    "chevron-left": "\f16d",
+    "chevron-right": "\f16e",
+    "chevron-up": "\f16f",
+    "circle-22": "\f170",
+    "circle": "\f171",
+    "class-32": "\f172",
+    "class": "\f173",
+    "clock": "\f174",
+    "close-small": "\f175",
+    "close": "\f176",
+    "closest-point-22": "\f177",
+    "closest-point-series-22": "\f178",
+    "cloud": "\f179",
+    "code": "\f17a",
+    "cogs": "\f17b",
+    "collapse-22": "\f17c",
+    "collapse-card": "\f17d",
+    "collapse": "\f17e",
+    "column-chooser": "\f17f",
+    "comment-22": "\f180",
+    "comment-32": "\f181",
+    "comment": "\f182",
+    "compare-22": "\f183",
+    "compare": "\f184",
+    "component": "\f185",
+    "computer-parameters": "\f186",
+    "condenser-32": "\f187",
+    "confirmed-22": "\f188",
+    "confirmed": "\f189",
+    "consolidate": "\f18a",
+    "constant": "\f18b",
+    "contains": "\f18c",
+    "content-validation": "\f18d",
+    "controller-32": "\f18e",
+    "convert-type": "\f18f",
+    "cooling-tower-32": "\f190",
+    "copy-existing": "\f191",
+    "copy": "\f192",
+    "cost-benefit": "\f193",
+    "count": "\f194",
+    "create-datasheet": "\f195",
+    "create-entity": "\f196",
+    "create-recommendation": "\f197",
+    "create-relationship": "\f198",
+    "create-what-if": "\f199",
+    "cross-reference": "\f19a",
+    "crosshair-22": "\f19b",
+    "crosshair": "\f19c",
+    "cube-calculated-measure": "\f19d",
+    "dashboard-32": "\f19e",
+    "dashboard": "\f19f",
+    "data-quality": "\f1a0",
+    "data-resolution": "\f1a1",
+    "data-source": "\f1a2",
+    "data-sources-32": "\f1a3",
+    "database-32": "\f1a4",
+    "database-code": "\f1a5",
+    "datasheet-info": "\f1a6",
+    "datasheet-item": "\f1a7",
+    "deactivated-indicator": "\f1a8",
+    "delete-22": "\f1a9",
+    "delete-column": "\f1aa",
+    "delete-entity": "\f1ab",
+    "delete-node": "\f1ac",
+    "delete-relationship": "\f1ad",
+    "delete-row": "\f1ae",
+    "delete": "\f1af",
+    "deleted": "\f1b0",
+    "delta-22": "\f1b1",
+    "delta": "\f1b2",
+    "deploy": "\f1b3",
+    "deployment-22": "\f1b4",
+    "deployment-configuration": "\f1b5",
+    "deployments-32": "\f1b6",
+    "desktop-32": "\f1b7",
+    "desktop": "\f1b8",
+    "dev-ops-32": "\f1b9",
+    "device": "\f1ba",
+    "diagram-tree": "\f1bb",
+    "digital-twin-32": "\f1bc",
+    "dimension": "\f1bd",
+    "divide": "\f1be",
+    "doc": "\f1bf",
+    "document-csv": "\f1c0",
+    "document-pdf": "\f1c1",
+    "document-word": "\f1c2",
+    "document-xls": "\f1c3",
+    "does-not-contain": "\f1c4",
+    "download": "\f1c5",
+    "draw-stripe-22": "\f1c6",
+    "draw-stripe": "\f1c7",
+    "drop-22": "\f1c8",
+    "drop": "\f1c9",
+    "edge-box-32": "\f1ca",
+    "edit-alert": "\f1cb",
+    "edit-entity": "\f1cc",
+    "edit-form": "\f1cd",
+    "edit": "\f1ce",
+    "edited": "\f1cf",
+    "email": "\f1d0",
+    "enable-multiple-selection": "\f1d1",
+    "ends-with": "\f1d2",
+    "entity-current": "\f1d3",
+    "entity": "\f1d4",
+    "equal": "\f1d5",
+    "error-22": "\f1d6",
+    "error": "\f1d7",
+    "exclamation-circled": "\f1d8",
+    "exclamation": "\f1d9",
+    "expand-22": "\f1da",
+    "expand-radius-22": "\f1db",
+    "expand-text-area": "\f1dc",
+    "expand": "\f1dd",
+    "exponent": "\f1de",
+    "factory": "\f1df",
+    "failure": "\f1e0",
+    "favorite-12": "\f1e1",
+    "favorite": "\f1e2",
+    "favorited-12": "\f1e3",
+    "field-constant": "\f1e4",
+    "field-map": "\f1e5",
+    "field-value-change-condition-node": "\f1e6",
+    "filter-12": "\f1e7",
+    "filter-active-12": "\f1e8",
+    "filter-active": "\f1e9",
+    "filter": "\f1ea",
+    "find": "\f1eb",
+    "fit": "\f1ec",
+    "flag": "\f1ed",
+    "fleet-32": "\f1ee",
+    "focus": "\f1ef",
+    "folder-add": "\f1f0",
+    "folder-closed": "\f1f1",
+    "folder-open": "\f1f2",
+    "folder-shift-left": "\f1f3",
+    "folder-shift-right": "\f1f4",
+    "forecast": "\f1f5",
+    "formula": "\f1f6",
+    "fullscreen-22": "\f1f7",
+    "fullscreen": "\f1f8",
+    "gas-turbine-32": "\f1f9",
+    "gateway-32": "\f1fa",
+    "ge-tag": "\f1fb",
+    "generate-report": "\f1fc",
+    "go-to-source": "\f1fd",
+    "greater-than-or-equal": "\f1fe",
+    "greater-than": "\f1ff",
+    "grid": "\f200",
+    "group-data-by": "\f201",
+    "group-data": "\f202",
+    "group": "\f203",
+    "growth": "\f204",
+    "health-alert": "\f205",
+    "health-indicator": "\f206",
+    "health-no-data": "\f207",
+    "health-normal": "\f208",
+    "health-warning": "\f209",
+    "help-22": "\f20a",
+    "help": "\f20b",
+    "hide-22": "\f20c",
+    "hide-grid": "\f20d",
+    "hide": "\f20e",
+    "hierarchy-classic-22": "\f20f",
+    "hierarchy": "\f210",
+    "history": "\f211",
+    "home-32": "\f212",
+    "home-set": "\f213",
+    "home": "\f214",
+    "hrsg-32": "\f215",
+    "hypothesis-state": "\f216",
+    "image": "\f217",
+    "in-between": "\f218",
+    "in-progress-22": "\f219",
+    "information-22": "\f21a",
+    "information": "\f21b",
+    "ingestion-32": "\f21c",
+    "institution": "\f21d",
+    "inventory-22": "\f21e",
+    "is-null": "\f21f",
+    "k-consumed-22": "\f220",
+    "k-dough-mixing-22": "\f221",
+    "k-dough-up-22": "\f222",
+    "k-hold-22": "\f223",
+    "k-preparation-22": "\f224",
+    "k-scrap-22": "\f225",
+    "k-slurry-mixing-22": "\f226",
+    "key": "\f227",
+    "kpi-efficiency-32": "\f228",
+    "kpi-general-32": "\f229",
+    "kpi-heat-rate-32": "\f22a",
+    "kpi-output-32": "\f22b",
+    "lasso-22": "\f22c",
+    "lasso": "\f22d",
+    "last": "\f22e",
+    "layout": "\f22f",
+    "less-than-or-equal": "\f230",
+    "less-than": "\f231",
+    "level-five": "\f232",
+    "level-four": "\f233",
+    "level-one": "\f234",
+    "level-three": "\f235",
+    "level-two": "\f236",
+    "lightbulb-32": "\f237",
+    "lightbulb": "\f238",
+    "line-32": "\f239",
+    "line-og-32": "\f23a",
+    "link": "\f23b",
+    "location": "\f23c",
+    "lock": "\f23d",
+    "locomotive-32": "\f23e",
+    "log-32": "\f23f",
+    "log-out": "\f240",
+    "logic-gate": "\f241",
+    "login-panel": "\f242",
+    "machine-32": "\f243",
+    "maintenance": "\f244",
+    "manage-tml-group-components": "\f245",
+    "mandatory": "\f246",
+    "manufacturing-line-32": "\f247",
+    "map": "\f248",
+    "margin-currency": "\f249",
+    "margin-value": "\f24a",
+    "math": "\f24b",
+    "maximum": "\f24c",
+    "mdx": "\f24d",
+    "measure": "\f24e",
+    "measurement-location-group": "\f24f",
+    "measurement-location": "\f250",
+    "measurement-units": "\f251",
+    "menu": "\f252",
+    "message-32": "\f253",
+    "microphone-22": "\f254",
+    "microphone": "\f255",
+    "microservice-32": "\f256",
+    "minimum-production": "\f257",
+    "minimum": "\f258",
+    "mobile-menu": "\f259",
+    "module-settings": "\f25a",
+    "more": "\f25b",
+    "move-axis-22": "\f25c",
+    "move-axis": "\f25d",
+    "move-handle": "\f25e",
+    "multiple-column": "\f25f",
+    "multiply": "\f260",
+    "new-policy": "\f261",
+    "new-window": "\f262",
+    "node-execution": "\f263",
+    "nominal-measurements": "\f264",
+    "not-allowed": "\f265",
+    "not-equal": "\f266",
+    "note": "\f267",
+    "notification-off-22": "\f268",
+    "notification-off": "\f269",
+    "notification": "\f26a",
+    "offline": "\f26b",
+    "online": "\f26c",
+    "opc-tag": "\f26d",
+    "open-record": "\f26e",
+    "optimize-strategy": "\f26f",
+    "or-alt": "\f270",
+    "or": "\f271",
+    "orchestration-32": "\f272",
+    "orders-32": "\f273",
+    "otc-tag": "\f274",
+    "overdue-inspection-date": "\f275",
+    "overflow-down": "\f276",
+    "overflow-left": "\f277",
+    "overflow-right": "\f278",
+    "overflow-up": "\f279",
+    "paintbrush": "\f27a",
+    "pan-22": "\f27b",
+    "pan": "\f27c",
+    "paste": "\f27d",
+    "pause": "\f27e",
+    "performance": "\f27f",
+    "phone-32": "\f280",
+    "phone": "\f281",
+    "pin-22": "\f282",
+    "pin": "\f283",
+    "pipeline-32": "\f284",
+    "plant-32": "\f285",
+    "play": "\f286",
+    "point-control-panel": "\f287",
+    "point-enumerations": "\f288",
+    "point-value": "\f289",
+    "point": "\f28a",
+    "policy-activated-indicator": "\f28b",
+    "policy-active-all": "\f28c",
+    "policy-active": "\f28d",
+    "policy-deactivate-all": "\f28e",
+    "policy-deactivate": "\f28f",
+    "policy-deactivated": "\f290",
+    "policy-error-indicator": "\f291",
+    "port": "\f292",
+    "prd-component-identifier": "\f293",
+    "predix-box-32": "\f294",
+    "preferences": "\f295",
+    "print": "\f296",
+    "product-32": "\f297",
+    "products-32": "\f298",
+    "project-parameters": "\f299",
+    "promote-to-asm": "\f29a",
+    "puzzle-piece": "\f29b",
+    "qr-code": "\f29c",
+    "query": "\f29d",
+    "question-mark": "\f29e",
+    "r-script": "\f29f",
+    "rail-yard-32": "\f2a0",
+    "re-syncing": "\f2a1",
+    "recommendation": "\f2a2",
+    "record-add": "\f2a3",
+    "redo": "\f2a4",
+    "reference-document-shift-left": "\f2a5",
+    "reference-document-shift-right": "\f2a6",
+    "refresh-22": "\f2a7",
+    "refresh-32": "\f2a8",
+    "refresh": "\f2a9",
+    "regenerate-plan": "\f2aa",
+    "relationship-input-mode": "\f2ab",
+    "reliability-distribution": "\f2ac",
+    "reliability-growth": "\f2ad",
+    "remainder": "\f2ae",
+    "remove-brush-22": "\f2af",
+    "remove-stripe-22": "\f2b0",
+    "remove-stripe": "\f2b1",
+    "removed": "\f2b2",
+    "rename": "\f2b3",
+    "reply": "\f2b4",
+    "report-32": "\f2b5",
+    "report": "\f2b6",
+    "reset-22": "\f2b7",
+    "reset-zoom-22": "\f2b8",
+    "reset": "\f2b9",
+    "resize-22": "\f2ba",
+    "return-value": "\f2bb",
+    "risk-matrix": "\f2bc",
+    "round": "\f2bd",
+    "rounds": "\f2be",
+    "routes-32": "\f2bf",
+    "rule": "\f2c0",
+    "save-as-22": "\f2c1",
+    "save-as": "\f2c2",
+    "save-policy-model-as-instances": "\f2c3",
+    "save": "\f2c4",
+    "scan": "\f2c5",
+    "screen-collapse": "\f2c6",
+    "screen-expand": "\f2c7",
+    "script-32": "\f2c8",
+    "script": "\f2c9",
+    "search": "\f2ca",
+    "select-all": "\f2cb",
+    "send-to-device": "\f2cc",
+    "send": "\f2cd",
+    "sensor-32": "\f2ce",
+    "sequence-profile": "\f2cf",
+    "settings-22": "\f2d0",
+    "settings": "\f2d1",
+    "share": "\f2d2",
+    "show-users": "\f2d3",
+    "show": "\f2d4",
+    "shrink-radius-22": "\f2d5",
+    "single-server": "\f2d6",
+    "sitemap": "\f2d7",
+    "skip-32": "\f2d8",
+    "skip": "\f2d9",
+    "skipped-measurement": "\f2da",
+    "sms-32": "\f2db",
+    "solar-panel-32": "\f2dc",
+    "sort": "\f2dd",
+    "sound": "\f2de",
+    "splitter": "\f2df",
+    "square": "\f2e0",
+    "standalone-recommendation": "\f2e1",
+    "starts-with": "\f2e2",
+    "status-action-pending": "\f2e3",
+    "status-adaptation-deferred": "\f2e4",
+    "status-adaptation-in-progress": "\f2e5",
+    "status-adaptation-pending": "\f2e6",
+    "status-assigned": "\f2e7",
+    "status-cancel": "\f2e8",
+    "status-deferred": "\f2e9",
+    "status-disabled": "\f2ea",
+    "status-escalated": "\f2eb",
+    "status-investigating": "\f2ec",
+    "status-maintenance": "\f2ed",
+    "status-new": "\f2ee",
+    "status-stopped": "\f2ef",
+    "steam-turbine-32": "\f2f0",
+    "step-strategy": "\f2f1",
+    "step-template": "\f2f2",
+    "step": "\f2f3",
+    "stop": "\f2f4",
+    "sub-policy": "\f2f5",
+    "subscribe": "\f2f6",
+    "subsystem": "\f2f7",
+    "subtract": "\f2f8",
+    "sum": "\f2f9",
+    "switch": "\f2fa",
+    "syncing": "\f2fb",
+    "table-sort": "\f2fc",
+    "table-view": "\f2fd",
+    "tablet": "\f2fe",
+    "tag-12": "\f2ff",
+    "tag-22": "\f300",
+    "tag-32": "\f301",
+    "tag-group-12": "\f302",
+    "tag-group-22": "\f303",
+    "tag-group-32": "\f304",
+    "tag-group": "\f305",
+    "tag-search": "\f306",
+    "tag-smart": "\f307",
+    "tag-visibility": "\f308",
+    "tag": "\f309",
+    "team-member-shift-left": "\f30a",
+    "team-member-shift-right": "\f30b",
+    "template": "\f30c",
+    "templates-32": "\f30d",
+    "textformat-aligncenter": "\f30e",
+    "textformat-alignjustify": "\f30f",
+    "textformat-alignleft": "\f310",
+    "textformat-alignright": "\f311",
+    "textformat-bold": "\f312",
+    "textformat-italic": "\f313",
+    "textformat-listordered": "\f314",
+    "textformat-listunordered": "\f315",
+    "textformat-rteditor": "\f316",
+    "textformat-strike": "\f317",
+    "textformat-textcolor": "\f318",
+    "textformat-underline": "\f319",
+    "threshold-statistics": "\f31a",
+    "time-32": "\f31b",
+    "time-series-tag": "\f31c",
+    "time-units": "\f31d",
+    "timezone": "\f31e",
+    "tm-data-entry": "\f31f",
+    "train-32": "\f320",
+    "translation": "\f321",
+    "transpose": "\f322",
+    "tree-collapse": "\f323",
+    "tree-expand": "\f324",
+    "truck-32": "\f325",
+    "type": "\f326",
+    "unconsolidate": "\f327",
+    "undo": "\f328",
+    "ungrouped-tab-group": "\f329",
+    "unlink": "\f32a",
+    "unlocked": "\f32b",
+    "unmerge": "\f32c",
+    "unpin": "\f32d",
+    "uom": "\f32e",
+    "upload": "\f32f",
+    "user-add": "\f330",
+    "user-hierarchy": "\f331",
+    "user-key": "\f332",
+    "user-not-allowed": "\f333",
+    "user-remove": "\f334",
+    "user-reset": "\f335",
+    "user-settings": "\f336",
+    "user-verified": "\f337",
+    "user": "\f338",
+    "users-32": "\f339",
+    "users": "\f33a",
+    "versions-32": "\f33b",
+    "view-datasheet": "\f33c",
+    "view-inbox": "\f33d",
+    "view-list": "\f33e",
+    "view-recommendation-32": "\f33f",
+    "website": "\f340",
+    "wind-turbine-32": "\f341",
+    "x-axis-22": "\f342",
+    "x-axis": "\f343",
+    "xy-axis-22": "\f344",
+    "xy-axis": "\f345",
+    "y-axis-22": "\f346",
+    "y-axis": "\f347",
+    "zoom-generic-22": "\f348",
+    "zoom-in-22": "\f349",
+    "zoom-in": "\f34a",
+    "zoom-out-22": "\f34b",
+    "zoom-out-one-level-22": "\f34c",
+    "zoom-out": "\f34d",
+    "zoom-toolbar-22": "\f34e",
+);
+
+.gedi-add-22:before {
+    content: map-get($gedi-map, "add-22");
+}
+.gedi-add-brush-22:before {
+    content: map-get($gedi-map, "add-brush-22");
+}
+.gedi-add-column-left:before {
+    content: map-get($gedi-map, "add-column-left");
+}
+.gedi-add-column-right:before {
+    content: map-get($gedi-map, "add-column-right");
+}
+.gedi-add-details:before {
+    content: map-get($gedi-map, "add-details");
+}
+.gedi-add-doc:before {
+    content: map-get($gedi-map, "add-doc");
+}
+.gedi-add-record-22:before {
+    content: map-get($gedi-map, "add-record-22");
+}
+.gedi-add-row-bottom:before {
+    content: map-get($gedi-map, "add-row-bottom");
+}
+.gedi-add-row-top:before {
+    content: map-get($gedi-map, "add-row-top");
+}
+.gedi-add-tab:before {
+    content: map-get($gedi-map, "add-tab");
+}
+.gedi-add-time-series:before {
+    content: map-get($gedi-map, "add-time-series");
+}
+.gedi-add-to-health-indicator:before {
+    content: map-get($gedi-map, "add-to-health-indicator");
+}
+.gedi-add:before {
+    content: map-get($gedi-map, "add");
+}
+.gedi-added:before {
+    content: map-get($gedi-map, "added");
+}
+.gedi-administration-32:before {
+    content: map-get($gedi-map, "administration-32");
+}
+.gedi-ahm:before {
+    content: map-get($gedi-map, "ahm");
+}
+.gedi-airplane-32:before {
+    content: map-get($gedi-map, "airplane-32");
+}
+.gedi-airplane-engine-32:before {
+    content: map-get($gedi-map, "airplane-engine-32");
+}
+.gedi-airport-32-copy-13:before {
+    content: map-get($gedi-map, "airport-32-copy-13");
+}
+.gedi-airport-32:before {
+    content: map-get($gedi-map, "airport-32");
+}
+.gedi-alarm-blocking:before {
+    content: map-get($gedi-map, "alarm-blocking");
+}
+.gedi-alarm-printer:before {
+    content: map-get($gedi-map, "alarm-printer");
+}
+.gedi-alarm:before {
+    content: map-get($gedi-map, "alarm");
+}
+.gedi-alert-32:before {
+    content: map-get($gedi-map, "alert-32");
+}
+.gedi-alert-add:before {
+    content: map-get($gedi-map, "alert-add");
+}
+.gedi-alert-query:before {
+    content: map-get($gedi-map, "alert-query");
+}
+.gedi-alert:before {
+    content: map-get($gedi-map, "alert");
+}
+.gedi-all-points-in-area-22:before {
+    content: map-get($gedi-map, "all-points-in-area-22");
+}
+.gedi-alphabet-sort:before {
+    content: map-get($gedi-map, "alphabet-sort");
+}
+.gedi-ams-tag:before {
+    content: map-get($gedi-map, "ams-tag");
+}
+.gedi-analysis-32:before {
+    content: map-get($gedi-map, "analysis-32");
+}
+.gedi-analytics-32:before {
+    content: map-get($gedi-map, "analytics-32");
+}
+.gedi-and-alt:before {
+    content: map-get($gedi-map, "and-alt");
+}
+.gedi-and:before {
+    content: map-get($gedi-map, "and");
+}
+.gedi-apply-analysis:before {
+    content: map-get($gedi-map, "apply-analysis");
+}
+.gedi-apply-component:before {
+    content: map-get($gedi-map, "apply-component");
+}
+.gedi-apply-template:before {
+    content: map-get($gedi-map, "apply-template");
+}
+.gedi-arrow-down-12:before {
+    content: map-get($gedi-map, "arrow-down-12");
+}
+.gedi-arrow-down:before {
+    content: map-get($gedi-map, "arrow-down");
+}
+.gedi-arrow-left-12:before {
+    content: map-get($gedi-map, "arrow-left-12");
+}
+.gedi-arrow-left:before {
+    content: map-get($gedi-map, "arrow-left");
+}
+.gedi-arrow-right-12:before {
+    content: map-get($gedi-map, "arrow-right-12");
+}
+.gedi-arrow-right:before {
+    content: map-get($gedi-map, "arrow-right");
+}
+.gedi-arrow-up-12:before {
+    content: map-get($gedi-map, "arrow-up-12");
+}
+.gedi-arrow-up:before {
+    content: map-get($gedi-map, "arrow-up");
+}
+.gedi-asset-12:before {
+    content: map-get($gedi-map, "asset-12");
+}
+.gedi-asset-22:before {
+    content: map-get($gedi-map, "asset-22");
+}
+.gedi-asset-32:before {
+    content: map-get($gedi-map, "asset-32");
+}
+.gedi-asset-add:before {
+    content: map-get($gedi-map, "asset-add");
+}
+.gedi-asset-group-12:before {
+    content: map-get($gedi-map, "asset-group-12");
+}
+.gedi-asset-group:before {
+    content: map-get($gedi-map, "asset-group");
+}
+.gedi-asset:before {
+    content: map-get($gedi-map, "asset");
+}
+.gedi-associated-links:before {
+    content: map-get($gedi-map, "associated-links");
+}
+.gedi-attachment:before {
+    content: map-get($gedi-map, "attachment");
+}
+.gedi-attribute-32:before {
+    content: map-get($gedi-map, "attribute-32");
+}
+.gedi-attribute-hierarchy:before {
+    content: map-get($gedi-map, "attribute-hierarchy");
+}
+.gedi-attribute-set:before {
+    content: map-get($gedi-map, "attribute-set");
+}
+.gedi-attribute:before {
+    content: map-get($gedi-map, "attribute");
+}
+.gedi-automobile-32:before {
+    content: map-get($gedi-map, "automobile-32");
+}
+.gedi-average:before {
+    content: map-get($gedi-map, "average");
+}
+.gedi-back-to-browser:before {
+    content: map-get($gedi-map, "back-to-browser");
+}
+.gedi-base-rule:before {
+    content: map-get($gedi-map, "base-rule");
+}
+.gedi-below-t-min:before {
+    content: map-get($gedi-map, "below-t-min");
+}
+.gedi-bento-box:before {
+    content: map-get($gedi-map, "bento-box");
+}
+.gedi-boiler-32:before {
+    content: map-get($gedi-map, "boiler-32");
+}
+.gedi-bookmark:before {
+    content: map-get($gedi-map, "bookmark");
+}
+.gedi-bring-to-front-22:before {
+    content: map-get($gedi-map, "bring-to-front-22");
+}
+.gedi-brush-22:before {
+    content: map-get($gedi-map, "brush-22");
+}
+.gedi-brush:before {
+    content: map-get($gedi-map, "brush");
+}
+.gedi-bug-32:before {
+    content: map-get($gedi-map, "bug-32");
+}
+.gedi-bulk-data:before {
+    content: map-get($gedi-map, "bulk-data");
+}
+.gedi-calculator:before {
+    content: map-get($gedi-map, "calculator");
+}
+.gedi-calendar-32:before {
+    content: map-get($gedi-map, "calendar-32");
+}
+.gedi-calendar-add:before {
+    content: map-get($gedi-map, "calendar-add");
+}
+.gedi-calendar-ban:before {
+    content: map-get($gedi-map, "calendar-ban");
+}
+.gedi-calendar-production-event:before {
+    content: map-get($gedi-map, "calendar-production-event");
+}
+.gedi-calendar-remove:before {
+    content: map-get($gedi-map, "calendar-remove");
+}
+.gedi-calendar:before {
+    content: map-get($gedi-map, "calendar");
+}
+.gedi-camera-22:before {
+    content: map-get($gedi-map, "camera-22");
+}
+.gedi-camera-flip-22:before {
+    content: map-get($gedi-map, "camera-flip-22");
+}
+.gedi-camera-flip-32:before {
+    content: map-get($gedi-map, "camera-flip-32");
+}
+.gedi-camera:before {
+    content: map-get($gedi-map, "camera");
+}
+.gedi-card-add-22:before {
+    content: map-get($gedi-map, "card-add-22");
+}
+.gedi-cards-22:before {
+    content: map-get($gedi-map, "cards-22");
+}
+.gedi-cards-menu-22:before {
+    content: map-get($gedi-map, "cards-menu-22");
+}
+.gedi-cards:before {
+    content: map-get($gedi-map, "cards");
+}
+.gedi-cart:before {
+    content: map-get($gedi-map, "cart");
+}
+.gedi-case_query:before {
+    content: map-get($gedi-map, "case_query");
+}
+.gedi-case-add-22:before {
+    content: map-get($gedi-map, "case-add-22");
+}
+.gedi-case-add:before {
+    content: map-get($gedi-map, "case-add");
+}
+.gedi-case-edit:before {
+    content: map-get($gedi-map, "case-edit");
+}
+.gedi-case-node:before {
+    content: map-get($gedi-map, "case-node");
+}
+.gedi-case:before {
+    content: map-get($gedi-map, "case");
+}
+.gedi-cases-32:before {
+    content: map-get($gedi-map, "cases-32");
+}
+.gedi-catalog-32:before {
+    content: map-get($gedi-map, "catalog-32");
+}
+.gedi-cell-tower-32:before {
+    content: map-get($gedi-map, "cell-tower-32");
+}
+.gedi-change-state:before {
+    content: map-get($gedi-map, "change-state");
+}
+.gedi-chart-bar:before {
+    content: map-get($gedi-map, "chart-bar");
+}
+.gedi-chart-line-22:before {
+    content: map-get($gedi-map, "chart-line-22");
+}
+.gedi-chart-line:before {
+    content: map-get($gedi-map, "chart-line");
+}
+.gedi-chart-pie:before {
+    content: map-get($gedi-map, "chart-pie");
+}
+.gedi-chart-residual-22:before {
+    content: map-get($gedi-map, "chart-residual-22");
+}
+.gedi-chart-residual:before {
+    content: map-get($gedi-map, "chart-residual");
+}
+.gedi-chart-settings-22:before {
+    content: map-get($gedi-map, "chart-settings-22");
+}
+.gedi-chart-trend:before {
+    content: map-get($gedi-map, "chart-trend");
+}
+.gedi-chat-32:before {
+    content: map-get($gedi-map, "chat-32");
+}
+.gedi-check:before {
+    content: map-get($gedi-map, "check");
+}
+.gedi-chevron-down:before {
+    content: map-get($gedi-map, "chevron-down");
+}
+.gedi-chevron-left:before {
+    content: map-get($gedi-map, "chevron-left");
+}
+.gedi-chevron-right:before {
+    content: map-get($gedi-map, "chevron-right");
+}
+.gedi-chevron-up:before {
+    content: map-get($gedi-map, "chevron-up");
+}
+.gedi-circle-22:before {
+    content: map-get($gedi-map, "circle-22");
+}
+.gedi-circle:before {
+    content: map-get($gedi-map, "circle");
+}
+.gedi-class-32:before {
+    content: map-get($gedi-map, "class-32");
+}
+.gedi-class:before {
+    content: map-get($gedi-map, "class");
+}
+.gedi-clock:before {
+    content: map-get($gedi-map, "clock");
+}
+.gedi-close-small:before {
+    content: map-get($gedi-map, "close-small");
+}
+.gedi-close:before {
+    content: map-get($gedi-map, "close");
+}
+.gedi-closest-point-22:before {
+    content: map-get($gedi-map, "closest-point-22");
+}
+.gedi-closest-point-series-22:before {
+    content: map-get($gedi-map, "closest-point-series-22");
+}
+.gedi-cloud:before {
+    content: map-get($gedi-map, "cloud");
+}
+.gedi-code:before {
+    content: map-get($gedi-map, "code");
+}
+.gedi-cogs:before {
+    content: map-get($gedi-map, "cogs");
+}
+.gedi-collapse-22:before {
+    content: map-get($gedi-map, "collapse-22");
+}
+.gedi-collapse-card:before {
+    content: map-get($gedi-map, "collapse-card");
+}
+.gedi-collapse:before {
+    content: map-get($gedi-map, "collapse");
+}
+.gedi-column-chooser:before {
+    content: map-get($gedi-map, "column-chooser");
+}
+.gedi-comment-22:before {
+    content: map-get($gedi-map, "comment-22");
+}
+.gedi-comment-32:before {
+    content: map-get($gedi-map, "comment-32");
+}
+.gedi-comment:before {
+    content: map-get($gedi-map, "comment");
+}
+.gedi-compare-22:before {
+    content: map-get($gedi-map, "compare-22");
+}
+.gedi-compare:before {
+    content: map-get($gedi-map, "compare");
+}
+.gedi-component:before {
+    content: map-get($gedi-map, "component");
+}
+.gedi-computer-parameters:before {
+    content: map-get($gedi-map, "computer-parameters");
+}
+.gedi-condenser-32:before {
+    content: map-get($gedi-map, "condenser-32");
+}
+.gedi-confirmed-22:before {
+    content: map-get($gedi-map, "confirmed-22");
+}
+.gedi-confirmed:before {
+    content: map-get($gedi-map, "confirmed");
+}
+.gedi-consolidate:before {
+    content: map-get($gedi-map, "consolidate");
+}
+.gedi-constant:before {
+    content: map-get($gedi-map, "constant");
+}
+.gedi-contains:before {
+    content: map-get($gedi-map, "contains");
+}
+.gedi-content-validation:before {
+    content: map-get($gedi-map, "content-validation");
+}
+.gedi-controller-32:before {
+    content: map-get($gedi-map, "controller-32");
+}
+.gedi-convert-type:before {
+    content: map-get($gedi-map, "convert-type");
+}
+.gedi-cooling-tower-32:before {
+    content: map-get($gedi-map, "cooling-tower-32");
+}
+.gedi-copy-existing:before {
+    content: map-get($gedi-map, "copy-existing");
+}
+.gedi-copy:before {
+    content: map-get($gedi-map, "copy");
+}
+.gedi-cost-benefit:before {
+    content: map-get($gedi-map, "cost-benefit");
+}
+.gedi-count:before {
+    content: map-get($gedi-map, "count");
+}
+.gedi-create-datasheet:before {
+    content: map-get($gedi-map, "create-datasheet");
+}
+.gedi-create-entity:before {
+    content: map-get($gedi-map, "create-entity");
+}
+.gedi-create-recommendation:before {
+    content: map-get($gedi-map, "create-recommendation");
+}
+.gedi-create-relationship:before {
+    content: map-get($gedi-map, "create-relationship");
+}
+.gedi-create-what-if:before {
+    content: map-get($gedi-map, "create-what-if");
+}
+.gedi-cross-reference:before {
+    content: map-get($gedi-map, "cross-reference");
+}
+.gedi-crosshair-22:before {
+    content: map-get($gedi-map, "crosshair-22");
+}
+.gedi-crosshair:before {
+    content: map-get($gedi-map, "crosshair");
+}
+.gedi-cube-calculated-measure:before {
+    content: map-get($gedi-map, "cube-calculated-measure");
+}
+.gedi-dashboard-32:before {
+    content: map-get($gedi-map, "dashboard-32");
+}
+.gedi-dashboard:before {
+    content: map-get($gedi-map, "dashboard");
+}
+.gedi-data-quality:before {
+    content: map-get($gedi-map, "data-quality");
+}
+.gedi-data-resolution:before {
+    content: map-get($gedi-map, "data-resolution");
+}
+.gedi-data-source:before {
+    content: map-get($gedi-map, "data-source");
+}
+.gedi-data-sources-32:before {
+    content: map-get($gedi-map, "data-sources-32");
+}
+.gedi-database-32:before {
+    content: map-get($gedi-map, "database-32");
+}
+.gedi-database-code:before {
+    content: map-get($gedi-map, "database-code");
+}
+.gedi-datasheet-info:before {
+    content: map-get($gedi-map, "datasheet-info");
+}
+.gedi-datasheet-item:before {
+    content: map-get($gedi-map, "datasheet-item");
+}
+.gedi-deactivated-indicator:before {
+    content: map-get($gedi-map, "deactivated-indicator");
+}
+.gedi-delete-22:before {
+    content: map-get($gedi-map, "delete-22");
+}
+.gedi-delete-column:before {
+    content: map-get($gedi-map, "delete-column");
+}
+.gedi-delete-entity:before {
+    content: map-get($gedi-map, "delete-entity");
+}
+.gedi-delete-node:before {
+    content: map-get($gedi-map, "delete-node");
+}
+.gedi-delete-relationship:before {
+    content: map-get($gedi-map, "delete-relationship");
+}
+.gedi-delete-row:before {
+    content: map-get($gedi-map, "delete-row");
+}
+.gedi-delete:before {
+    content: map-get($gedi-map, "delete");
+}
+.gedi-deleted:before {
+    content: map-get($gedi-map, "deleted");
+}
+.gedi-delta-22:before {
+    content: map-get($gedi-map, "delta-22");
+}
+.gedi-delta:before {
+    content: map-get($gedi-map, "delta");
+}
+.gedi-deploy:before {
+    content: map-get($gedi-map, "deploy");
+}
+.gedi-deployment-22:before {
+    content: map-get($gedi-map, "deployment-22");
+}
+.gedi-deployment-configuration:before {
+    content: map-get($gedi-map, "deployment-configuration");
+}
+.gedi-deployments-32:before {
+    content: map-get($gedi-map, "deployments-32");
+}
+.gedi-desktop-32:before {
+    content: map-get($gedi-map, "desktop-32");
+}
+.gedi-desktop:before {
+    content: map-get($gedi-map, "desktop");
+}
+.gedi-dev-ops-32:before {
+    content: map-get($gedi-map, "dev-ops-32");
+}
+.gedi-device:before {
+    content: map-get($gedi-map, "device");
+}
+.gedi-diagram-tree:before {
+    content: map-get($gedi-map, "diagram-tree");
+}
+.gedi-digital-twin-32:before {
+    content: map-get($gedi-map, "digital-twin-32");
+}
+.gedi-dimension:before {
+    content: map-get($gedi-map, "dimension");
+}
+.gedi-divide:before {
+    content: map-get($gedi-map, "divide");
+}
+.gedi-doc:before {
+    content: map-get($gedi-map, "doc");
+}
+.gedi-document-csv:before {
+    content: map-get($gedi-map, "document-csv");
+}
+.gedi-document-pdf:before {
+    content: map-get($gedi-map, "document-pdf");
+}
+.gedi-document-word:before {
+    content: map-get($gedi-map, "document-word");
+}
+.gedi-document-xls:before {
+    content: map-get($gedi-map, "document-xls");
+}
+.gedi-does-not-contain:before {
+    content: map-get($gedi-map, "does-not-contain");
+}
+.gedi-download:before {
+    content: map-get($gedi-map, "download");
+}
+.gedi-draw-stripe-22:before {
+    content: map-get($gedi-map, "draw-stripe-22");
+}
+.gedi-draw-stripe:before {
+    content: map-get($gedi-map, "draw-stripe");
+}
+.gedi-drop-22:before {
+    content: map-get($gedi-map, "drop-22");
+}
+.gedi-drop:before {
+    content: map-get($gedi-map, "drop");
+}
+.gedi-edge-box-32:before {
+    content: map-get($gedi-map, "edge-box-32");
+}
+.gedi-edit-alert:before {
+    content: map-get($gedi-map, "edit-alert");
+}
+.gedi-edit-entity:before {
+    content: map-get($gedi-map, "edit-entity");
+}
+.gedi-edit-form:before {
+    content: map-get($gedi-map, "edit-form");
+}
+.gedi-edit:before {
+    content: map-get($gedi-map, "edit");
+}
+.gedi-edited:before {
+    content: map-get($gedi-map, "edited");
+}
+.gedi-email:before {
+    content: map-get($gedi-map, "email");
+}
+.gedi-enable-multiple-selection:before {
+    content: map-get($gedi-map, "enable-multiple-selection");
+}
+.gedi-ends-with:before {
+    content: map-get($gedi-map, "ends-with");
+}
+.gedi-entity-current:before {
+    content: map-get($gedi-map, "entity-current");
+}
+.gedi-entity:before {
+    content: map-get($gedi-map, "entity");
+}
+.gedi-equal:before {
+    content: map-get($gedi-map, "equal");
+}
+.gedi-error-22:before {
+    content: map-get($gedi-map, "error-22");
+}
+.gedi-error:before {
+    content: map-get($gedi-map, "error");
+}
+.gedi-exclamation-circled:before {
+    content: map-get($gedi-map, "exclamation-circled");
+}
+.gedi-exclamation:before {
+    content: map-get($gedi-map, "exclamation");
+}
+.gedi-expand-22:before {
+    content: map-get($gedi-map, "expand-22");
+}
+.gedi-expand-radius-22:before {
+    content: map-get($gedi-map, "expand-radius-22");
+}
+.gedi-expand-text-area:before {
+    content: map-get($gedi-map, "expand-text-area");
+}
+.gedi-expand:before {
+    content: map-get($gedi-map, "expand");
+}
+.gedi-exponent:before {
+    content: map-get($gedi-map, "exponent");
+}
+.gedi-factory:before {
+    content: map-get($gedi-map, "factory");
+}
+.gedi-failure:before {
+    content: map-get($gedi-map, "failure");
+}
+.gedi-favorite-12:before {
+    content: map-get($gedi-map, "favorite-12");
+}
+.gedi-favorite:before {
+    content: map-get($gedi-map, "favorite");
+}
+.gedi-favorited-12:before {
+    content: map-get($gedi-map, "favorited-12");
+}
+.gedi-field-constant:before {
+    content: map-get($gedi-map, "field-constant");
+}
+.gedi-field-map:before {
+    content: map-get($gedi-map, "field-map");
+}
+.gedi-field-value-change-condition-node:before {
+    content: map-get($gedi-map, "field-value-change-condition-node");
+}
+.gedi-filter-12:before {
+    content: map-get($gedi-map, "filter-12");
+}
+.gedi-filter-active-12:before {
+    content: map-get($gedi-map, "filter-active-12");
+}
+.gedi-filter-active:before {
+    content: map-get($gedi-map, "filter-active");
+}
+.gedi-filter:before {
+    content: map-get($gedi-map, "filter");
+}
+.gedi-find:before {
+    content: map-get($gedi-map, "find");
+}
+.gedi-fit:before {
+    content: map-get($gedi-map, "fit");
+}
+.gedi-flag:before {
+    content: map-get($gedi-map, "flag");
+}
+.gedi-fleet-32:before {
+    content: map-get($gedi-map, "fleet-32");
+}
+.gedi-focus:before {
+    content: map-get($gedi-map, "focus");
+}
+.gedi-folder-add:before {
+    content: map-get($gedi-map, "folder-add");
+}
+.gedi-folder-closed:before {
+    content: map-get($gedi-map, "folder-closed");
+}
+.gedi-folder-open:before {
+    content: map-get($gedi-map, "folder-open");
+}
+.gedi-folder-shift-left:before {
+    content: map-get($gedi-map, "folder-shift-left");
+}
+.gedi-folder-shift-right:before {
+    content: map-get($gedi-map, "folder-shift-right");
+}
+.gedi-forecast:before {
+    content: map-get($gedi-map, "forecast");
+}
+.gedi-formula:before {
+    content: map-get($gedi-map, "formula");
+}
+.gedi-fullscreen-22:before {
+    content: map-get($gedi-map, "fullscreen-22");
+}
+.gedi-fullscreen:before {
+    content: map-get($gedi-map, "fullscreen");
+}
+.gedi-gas-turbine-32:before {
+    content: map-get($gedi-map, "gas-turbine-32");
+}
+.gedi-gateway-32:before {
+    content: map-get($gedi-map, "gateway-32");
+}
+.gedi-ge-tag:before {
+    content: map-get($gedi-map, "ge-tag");
+}
+.gedi-generate-report:before {
+    content: map-get($gedi-map, "generate-report");
+}
+.gedi-go-to-source:before {
+    content: map-get($gedi-map, "go-to-source");
+}
+.gedi-greater-than-or-equal:before {
+    content: map-get($gedi-map, "greater-than-or-equal");
+}
+.gedi-greater-than:before {
+    content: map-get($gedi-map, "greater-than");
+}
+.gedi-grid:before {
+    content: map-get($gedi-map, "grid");
+}
+.gedi-group-data-by:before {
+    content: map-get($gedi-map, "group-data-by");
+}
+.gedi-group-data:before {
+    content: map-get($gedi-map, "group-data");
+}
+.gedi-group:before {
+    content: map-get($gedi-map, "group");
+}
+.gedi-growth:before {
+    content: map-get($gedi-map, "growth");
+}
+.gedi-health-alert:before {
+    content: map-get($gedi-map, "health-alert");
+}
+.gedi-health-indicator:before {
+    content: map-get($gedi-map, "health-indicator");
+}
+.gedi-health-no-data:before {
+    content: map-get($gedi-map, "health-no-data");
+}
+.gedi-health-normal:before {
+    content: map-get($gedi-map, "health-normal");
+}
+.gedi-health-warning:before {
+    content: map-get($gedi-map, "health-warning");
+}
+.gedi-help-22:before {
+    content: map-get($gedi-map, "help-22");
+}
+.gedi-help:before {
+    content: map-get($gedi-map, "help");
+}
+.gedi-hide-22:before {
+    content: map-get($gedi-map, "hide-22");
+}
+.gedi-hide-grid:before {
+    content: map-get($gedi-map, "hide-grid");
+}
+.gedi-hide:before {
+    content: map-get($gedi-map, "hide");
+}
+.gedi-hierarchy-classic-22:before {
+    content: map-get($gedi-map, "hierarchy-classic-22");
+}
+.gedi-hierarchy:before {
+    content: map-get($gedi-map, "hierarchy");
+}
+.gedi-history:before {
+    content: map-get($gedi-map, "history");
+}
+.gedi-home-32:before {
+    content: map-get($gedi-map, "home-32");
+}
+.gedi-home-set:before {
+    content: map-get($gedi-map, "home-set");
+}
+.gedi-home:before {
+    content: map-get($gedi-map, "home");
+}
+.gedi-hrsg-32:before {
+    content: map-get($gedi-map, "hrsg-32");
+}
+.gedi-hypothesis-state:before {
+    content: map-get($gedi-map, "hypothesis-state");
+}
+.gedi-image:before {
+    content: map-get($gedi-map, "image");
+}
+.gedi-in-between:before {
+    content: map-get($gedi-map, "in-between");
+}
+.gedi-in-progress-22:before {
+    content: map-get($gedi-map, "in-progress-22");
+}
+.gedi-information-22:before {
+    content: map-get($gedi-map, "information-22");
+}
+.gedi-information:before {
+    content: map-get($gedi-map, "information");
+}
+.gedi-ingestion-32:before {
+    content: map-get($gedi-map, "ingestion-32");
+}
+.gedi-institution:before {
+    content: map-get($gedi-map, "institution");
+}
+.gedi-inventory-22:before {
+    content: map-get($gedi-map, "inventory-22");
+}
+.gedi-is-null:before {
+    content: map-get($gedi-map, "is-null");
+}
+.gedi-k-consumed-22:before {
+    content: map-get($gedi-map, "k-consumed-22");
+}
+.gedi-k-dough-mixing-22:before {
+    content: map-get($gedi-map, "k-dough-mixing-22");
+}
+.gedi-k-dough-up-22:before {
+    content: map-get($gedi-map, "k-dough-up-22");
+}
+.gedi-k-hold-22:before {
+    content: map-get($gedi-map, "k-hold-22");
+}
+.gedi-k-preparation-22:before {
+    content: map-get($gedi-map, "k-preparation-22");
+}
+.gedi-k-scrap-22:before {
+    content: map-get($gedi-map, "k-scrap-22");
+}
+.gedi-k-slurry-mixing-22:before {
+    content: map-get($gedi-map, "k-slurry-mixing-22");
+}
+.gedi-key:before {
+    content: map-get($gedi-map, "key");
+}
+.gedi-kpi-efficiency-32:before {
+    content: map-get($gedi-map, "kpi-efficiency-32");
+}
+.gedi-kpi-general-32:before {
+    content: map-get($gedi-map, "kpi-general-32");
+}
+.gedi-kpi-heat-rate-32:before {
+    content: map-get($gedi-map, "kpi-heat-rate-32");
+}
+.gedi-kpi-output-32:before {
+    content: map-get($gedi-map, "kpi-output-32");
+}
+.gedi-lasso-22:before {
+    content: map-get($gedi-map, "lasso-22");
+}
+.gedi-lasso:before {
+    content: map-get($gedi-map, "lasso");
+}
+.gedi-last:before {
+    content: map-get($gedi-map, "last");
+}
+.gedi-layout:before {
+    content: map-get($gedi-map, "layout");
+}
+.gedi-less-than-or-equal:before {
+    content: map-get($gedi-map, "less-than-or-equal");
+}
+.gedi-less-than:before {
+    content: map-get($gedi-map, "less-than");
+}
+.gedi-level-five:before {
+    content: map-get($gedi-map, "level-five");
+}
+.gedi-level-four:before {
+    content: map-get($gedi-map, "level-four");
+}
+.gedi-level-one:before {
+    content: map-get($gedi-map, "level-one");
+}
+.gedi-level-three:before {
+    content: map-get($gedi-map, "level-three");
+}
+.gedi-level-two:before {
+    content: map-get($gedi-map, "level-two");
+}
+.gedi-lightbulb-32:before {
+    content: map-get($gedi-map, "lightbulb-32");
+}
+.gedi-lightbulb:before {
+    content: map-get($gedi-map, "lightbulb");
+}
+.gedi-line-32:before {
+    content: map-get($gedi-map, "line-32");
+}
+.gedi-line-og-32:before {
+    content: map-get($gedi-map, "line-og-32");
+}
+.gedi-link:before {
+    content: map-get($gedi-map, "link");
+}
+.gedi-location:before {
+    content: map-get($gedi-map, "location");
+}
+.gedi-lock:before {
+    content: map-get($gedi-map, "lock");
+}
+.gedi-locomotive-32:before {
+    content: map-get($gedi-map, "locomotive-32");
+}
+.gedi-log-32:before {
+    content: map-get($gedi-map, "log-32");
+}
+.gedi-log-out:before {
+    content: map-get($gedi-map, "log-out");
+}
+.gedi-logic-gate:before {
+    content: map-get($gedi-map, "logic-gate");
+}
+.gedi-login-panel:before {
+    content: map-get($gedi-map, "login-panel");
+}
+.gedi-machine-32:before {
+    content: map-get($gedi-map, "machine-32");
+}
+.gedi-maintenance:before {
+    content: map-get($gedi-map, "maintenance");
+}
+.gedi-manage-tml-group-components:before {
+    content: map-get($gedi-map, "manage-tml-group-components");
+}
+.gedi-mandatory:before {
+    content: map-get($gedi-map, "mandatory");
+}
+.gedi-manufacturing-line-32:before {
+    content: map-get($gedi-map, "manufacturing-line-32");
+}
+.gedi-map:before {
+    content: map-get($gedi-map, "map");
+}
+.gedi-margin-currency:before {
+    content: map-get($gedi-map, "margin-currency");
+}
+.gedi-margin-value:before {
+    content: map-get($gedi-map, "margin-value");
+}
+.gedi-math:before {
+    content: map-get($gedi-map, "math");
+}
+.gedi-maximum:before {
+    content: map-get($gedi-map, "maximum");
+}
+.gedi-mdx:before {
+    content: map-get($gedi-map, "mdx");
+}
+.gedi-measure:before {
+    content: map-get($gedi-map, "measure");
+}
+.gedi-measurement-location-group:before {
+    content: map-get($gedi-map, "measurement-location-group");
+}
+.gedi-measurement-location:before {
+    content: map-get($gedi-map, "measurement-location");
+}
+.gedi-measurement-units:before {
+    content: map-get($gedi-map, "measurement-units");
+}
+.gedi-menu:before {
+    content: map-get($gedi-map, "menu");
+}
+.gedi-message-32:before {
+    content: map-get($gedi-map, "message-32");
+}
+.gedi-microphone-22:before {
+    content: map-get($gedi-map, "microphone-22");
+}
+.gedi-microphone:before {
+    content: map-get($gedi-map, "microphone");
+}
+.gedi-microservice-32:before {
+    content: map-get($gedi-map, "microservice-32");
+}
+.gedi-minimum-production:before {
+    content: map-get($gedi-map, "minimum-production");
+}
+.gedi-minimum:before {
+    content: map-get($gedi-map, "minimum");
+}
+.gedi-mobile-menu:before {
+    content: map-get($gedi-map, "mobile-menu");
+}
+.gedi-module-settings:before {
+    content: map-get($gedi-map, "module-settings");
+}
+.gedi-more:before {
+    content: map-get($gedi-map, "more");
+}
+.gedi-move-axis-22:before {
+    content: map-get($gedi-map, "move-axis-22");
+}
+.gedi-move-axis:before {
+    content: map-get($gedi-map, "move-axis");
+}
+.gedi-move-handle:before {
+    content: map-get($gedi-map, "move-handle");
+}
+.gedi-multiple-column:before {
+    content: map-get($gedi-map, "multiple-column");
+}
+.gedi-multiply:before {
+    content: map-get($gedi-map, "multiply");
+}
+.gedi-new-policy:before {
+    content: map-get($gedi-map, "new-policy");
+}
+.gedi-new-window:before {
+    content: map-get($gedi-map, "new-window");
+}
+.gedi-node-execution:before {
+    content: map-get($gedi-map, "node-execution");
+}
+.gedi-nominal-measurements:before {
+    content: map-get($gedi-map, "nominal-measurements");
+}
+.gedi-not-allowed:before {
+    content: map-get($gedi-map, "not-allowed");
+}
+.gedi-not-equal:before {
+    content: map-get($gedi-map, "not-equal");
+}
+.gedi-note:before {
+    content: map-get($gedi-map, "note");
+}
+.gedi-notification-off-22:before {
+    content: map-get($gedi-map, "notification-off-22");
+}
+.gedi-notification-off:before {
+    content: map-get($gedi-map, "notification-off");
+}
+.gedi-notification:before {
+    content: map-get($gedi-map, "notification");
+}
+.gedi-offline:before {
+    content: map-get($gedi-map, "offline");
+}
+.gedi-online:before {
+    content: map-get($gedi-map, "online");
+}
+.gedi-opc-tag:before {
+    content: map-get($gedi-map, "opc-tag");
+}
+.gedi-open-record:before {
+    content: map-get($gedi-map, "open-record");
+}
+.gedi-optimize-strategy:before {
+    content: map-get($gedi-map, "optimize-strategy");
+}
+.gedi-or-alt:before {
+    content: map-get($gedi-map, "or-alt");
+}
+.gedi-or:before {
+    content: map-get($gedi-map, "or");
+}
+.gedi-orchestration-32:before {
+    content: map-get($gedi-map, "orchestration-32");
+}
+.gedi-orders-32:before {
+    content: map-get($gedi-map, "orders-32");
+}
+.gedi-otc-tag:before {
+    content: map-get($gedi-map, "otc-tag");
+}
+.gedi-overdue-inspection-date:before {
+    content: map-get($gedi-map, "overdue-inspection-date");
+}
+.gedi-overflow-down:before {
+    content: map-get($gedi-map, "overflow-down");
+}
+.gedi-overflow-left:before {
+    content: map-get($gedi-map, "overflow-left");
+}
+.gedi-overflow-right:before {
+    content: map-get($gedi-map, "overflow-right");
+}
+.gedi-overflow-up:before {
+    content: map-get($gedi-map, "overflow-up");
+}
+.gedi-paintbrush:before {
+    content: map-get($gedi-map, "paintbrush");
+}
+.gedi-pan-22:before {
+    content: map-get($gedi-map, "pan-22");
+}
+.gedi-pan:before {
+    content: map-get($gedi-map, "pan");
+}
+.gedi-paste:before {
+    content: map-get($gedi-map, "paste");
+}
+.gedi-pause:before {
+    content: map-get($gedi-map, "pause");
+}
+.gedi-performance:before {
+    content: map-get($gedi-map, "performance");
+}
+.gedi-phone-32:before {
+    content: map-get($gedi-map, "phone-32");
+}
+.gedi-phone:before {
+    content: map-get($gedi-map, "phone");
+}
+.gedi-pin-22:before {
+    content: map-get($gedi-map, "pin-22");
+}
+.gedi-pin:before {
+    content: map-get($gedi-map, "pin");
+}
+.gedi-pipeline-32:before {
+    content: map-get($gedi-map, "pipeline-32");
+}
+.gedi-plant-32:before {
+    content: map-get($gedi-map, "plant-32");
+}
+.gedi-play:before {
+    content: map-get($gedi-map, "play");
+}
+.gedi-point-control-panel:before {
+    content: map-get($gedi-map, "point-control-panel");
+}
+.gedi-point-enumerations:before {
+    content: map-get($gedi-map, "point-enumerations");
+}
+.gedi-point-value:before {
+    content: map-get($gedi-map, "point-value");
+}
+.gedi-point:before {
+    content: map-get($gedi-map, "point");
+}
+.gedi-policy-activated-indicator:before {
+    content: map-get($gedi-map, "policy-activated-indicator");
+}
+.gedi-policy-active-all:before {
+    content: map-get($gedi-map, "policy-active-all");
+}
+.gedi-policy-active:before {
+    content: map-get($gedi-map, "policy-active");
+}
+.gedi-policy-deactivate-all:before {
+    content: map-get($gedi-map, "policy-deactivate-all");
+}
+.gedi-policy-deactivate:before {
+    content: map-get($gedi-map, "policy-deactivate");
+}
+.gedi-policy-deactivated:before {
+    content: map-get($gedi-map, "policy-deactivated");
+}
+.gedi-policy-error-indicator:before {
+    content: map-get($gedi-map, "policy-error-indicator");
+}
+.gedi-port:before {
+    content: map-get($gedi-map, "port");
+}
+.gedi-prd-component-identifier:before {
+    content: map-get($gedi-map, "prd-component-identifier");
+}
+.gedi-predix-box-32:before {
+    content: map-get($gedi-map, "predix-box-32");
+}
+.gedi-preferences:before {
+    content: map-get($gedi-map, "preferences");
+}
+.gedi-print:before {
+    content: map-get($gedi-map, "print");
+}
+.gedi-product-32:before {
+    content: map-get($gedi-map, "product-32");
+}
+.gedi-products-32:before {
+    content: map-get($gedi-map, "products-32");
+}
+.gedi-project-parameters:before {
+    content: map-get($gedi-map, "project-parameters");
+}
+.gedi-promote-to-asm:before {
+    content: map-get($gedi-map, "promote-to-asm");
+}
+.gedi-puzzle-piece:before {
+    content: map-get($gedi-map, "puzzle-piece");
+}
+.gedi-qr-code:before {
+    content: map-get($gedi-map, "qr-code");
+}
+.gedi-query:before {
+    content: map-get($gedi-map, "query");
+}
+.gedi-question-mark:before {
+    content: map-get($gedi-map, "question-mark");
+}
+.gedi-r-script:before {
+    content: map-get($gedi-map, "r-script");
+}
+.gedi-rail-yard-32:before {
+    content: map-get($gedi-map, "rail-yard-32");
+}
+.gedi-re-syncing:before {
+    content: map-get($gedi-map, "re-syncing");
+}
+.gedi-recommendation:before {
+    content: map-get($gedi-map, "recommendation");
+}
+.gedi-record-add:before {
+    content: map-get($gedi-map, "record-add");
+}
+.gedi-redo:before {
+    content: map-get($gedi-map, "redo");
+}
+.gedi-reference-document-shift-left:before {
+    content: map-get($gedi-map, "reference-document-shift-left");
+}
+.gedi-reference-document-shift-right:before {
+    content: map-get($gedi-map, "reference-document-shift-right");
+}
+.gedi-refresh-22:before {
+    content: map-get($gedi-map, "refresh-22");
+}
+.gedi-refresh-32:before {
+    content: map-get($gedi-map, "refresh-32");
+}
+.gedi-refresh:before {
+    content: map-get($gedi-map, "refresh");
+}
+.gedi-regenerate-plan:before {
+    content: map-get($gedi-map, "regenerate-plan");
+}
+.gedi-relationship-input-mode:before {
+    content: map-get($gedi-map, "relationship-input-mode");
+}
+.gedi-reliability-distribution:before {
+    content: map-get($gedi-map, "reliability-distribution");
+}
+.gedi-reliability-growth:before {
+    content: map-get($gedi-map, "reliability-growth");
+}
+.gedi-remainder:before {
+    content: map-get($gedi-map, "remainder");
+}
+.gedi-remove-brush-22:before {
+    content: map-get($gedi-map, "remove-brush-22");
+}
+.gedi-remove-stripe-22:before {
+    content: map-get($gedi-map, "remove-stripe-22");
+}
+.gedi-remove-stripe:before {
+    content: map-get($gedi-map, "remove-stripe");
+}
+.gedi-removed:before {
+    content: map-get($gedi-map, "removed");
+}
+.gedi-rename:before {
+    content: map-get($gedi-map, "rename");
+}
+.gedi-reply:before {
+    content: map-get($gedi-map, "reply");
+}
+.gedi-report-32:before {
+    content: map-get($gedi-map, "report-32");
+}
+.gedi-report:before {
+    content: map-get($gedi-map, "report");
+}
+.gedi-reset-22:before {
+    content: map-get($gedi-map, "reset-22");
+}
+.gedi-reset-zoom-22:before {
+    content: map-get($gedi-map, "reset-zoom-22");
+}
+.gedi-reset:before {
+    content: map-get($gedi-map, "reset");
+}
+.gedi-resize-22:before {
+    content: map-get($gedi-map, "resize-22");
+}
+.gedi-return-value:before {
+    content: map-get($gedi-map, "return-value");
+}
+.gedi-risk-matrix:before {
+    content: map-get($gedi-map, "risk-matrix");
+}
+.gedi-round:before {
+    content: map-get($gedi-map, "round");
+}
+.gedi-rounds:before {
+    content: map-get($gedi-map, "rounds");
+}
+.gedi-routes-32:before {
+    content: map-get($gedi-map, "routes-32");
+}
+.gedi-rule:before {
+    content: map-get($gedi-map, "rule");
+}
+.gedi-save-as-22:before {
+    content: map-get($gedi-map, "save-as-22");
+}
+.gedi-save-as:before {
+    content: map-get($gedi-map, "save-as");
+}
+.gedi-save-policy-model-as-instances:before {
+    content: map-get($gedi-map, "save-policy-model-as-instances");
+}
+.gedi-save:before {
+    content: map-get($gedi-map, "save");
+}
+.gedi-scan:before {
+    content: map-get($gedi-map, "scan");
+}
+.gedi-screen-collapse:before {
+    content: map-get($gedi-map, "screen-collapse");
+}
+.gedi-screen-expand:before {
+    content: map-get($gedi-map, "screen-expand");
+}
+.gedi-script-32:before {
+    content: map-get($gedi-map, "script-32");
+}
+.gedi-script:before {
+    content: map-get($gedi-map, "script");
+}
+.gedi-search:before {
+    content: map-get($gedi-map, "search");
+}
+.gedi-select-all:before {
+    content: map-get($gedi-map, "select-all");
+}
+.gedi-send-to-device:before {
+    content: map-get($gedi-map, "send-to-device");
+}
+.gedi-send:before {
+    content: map-get($gedi-map, "send");
+}
+.gedi-sensor-32:before {
+    content: map-get($gedi-map, "sensor-32");
+}
+.gedi-sequence-profile:before {
+    content: map-get($gedi-map, "sequence-profile");
+}
+.gedi-settings-22:before {
+    content: map-get($gedi-map, "settings-22");
+}
+.gedi-settings:before {
+    content: map-get($gedi-map, "settings");
+}
+.gedi-share:before {
+    content: map-get($gedi-map, "share");
+}
+.gedi-show-users:before {
+    content: map-get($gedi-map, "show-users");
+}
+.gedi-show:before {
+    content: map-get($gedi-map, "show");
+}
+.gedi-shrink-radius-22:before {
+    content: map-get($gedi-map, "shrink-radius-22");
+}
+.gedi-single-server:before {
+    content: map-get($gedi-map, "single-server");
+}
+.gedi-sitemap:before {
+    content: map-get($gedi-map, "sitemap");
+}
+.gedi-skip-32:before {
+    content: map-get($gedi-map, "skip-32");
+}
+.gedi-skip:before {
+    content: map-get($gedi-map, "skip");
+}
+.gedi-skipped-measurement:before {
+    content: map-get($gedi-map, "skipped-measurement");
+}
+.gedi-sms-32:before {
+    content: map-get($gedi-map, "sms-32");
+}
+.gedi-solar-panel-32:before {
+    content: map-get($gedi-map, "solar-panel-32");
+}
+.gedi-sort:before {
+    content: map-get($gedi-map, "sort");
+}
+.gedi-sound:before {
+    content: map-get($gedi-map, "sound");
+}
+.gedi-splitter:before {
+    content: map-get($gedi-map, "splitter");
+}
+.gedi-square:before {
+    content: map-get($gedi-map, "square");
+}
+.gedi-standalone-recommendation:before {
+    content: map-get($gedi-map, "standalone-recommendation");
+}
+.gedi-starts-with:before {
+    content: map-get($gedi-map, "starts-with");
+}
+.gedi-status-action-pending:before {
+    content: map-get($gedi-map, "status-action-pending");
+}
+.gedi-status-adaptation-deferred:before {
+    content: map-get($gedi-map, "status-adaptation-deferred");
+}
+.gedi-status-adaptation-in-progress:before {
+    content: map-get($gedi-map, "status-adaptation-in-progress");
+}
+.gedi-status-adaptation-pending:before {
+    content: map-get($gedi-map, "status-adaptation-pending");
+}
+.gedi-status-assigned:before {
+    content: map-get($gedi-map, "status-assigned");
+}
+.gedi-status-cancel:before {
+    content: map-get($gedi-map, "status-cancel");
+}
+.gedi-status-deferred:before {
+    content: map-get($gedi-map, "status-deferred");
+}
+.gedi-status-disabled:before {
+    content: map-get($gedi-map, "status-disabled");
+}
+.gedi-status-escalated:before {
+    content: map-get($gedi-map, "status-escalated");
+}
+.gedi-status-investigating:before {
+    content: map-get($gedi-map, "status-investigating");
+}
+.gedi-status-maintenance:before {
+    content: map-get($gedi-map, "status-maintenance");
+}
+.gedi-status-new:before {
+    content: map-get($gedi-map, "status-new");
+}
+.gedi-status-stopped:before {
+    content: map-get($gedi-map, "status-stopped");
+}
+.gedi-steam-turbine-32:before {
+    content: map-get($gedi-map, "steam-turbine-32");
+}
+.gedi-step-strategy:before {
+    content: map-get($gedi-map, "step-strategy");
+}
+.gedi-step-template:before {
+    content: map-get($gedi-map, "step-template");
+}
+.gedi-step:before {
+    content: map-get($gedi-map, "step");
+}
+.gedi-stop:before {
+    content: map-get($gedi-map, "stop");
+}
+.gedi-sub-policy:before {
+    content: map-get($gedi-map, "sub-policy");
+}
+.gedi-subscribe:before {
+    content: map-get($gedi-map, "subscribe");
+}
+.gedi-subsystem:before {
+    content: map-get($gedi-map, "subsystem");
+}
+.gedi-subtract:before {
+    content: map-get($gedi-map, "subtract");
+}
+.gedi-sum:before {
+    content: map-get($gedi-map, "sum");
+}
+.gedi-switch:before {
+    content: map-get($gedi-map, "switch");
+}
+.gedi-syncing:before {
+    content: map-get($gedi-map, "syncing");
+}
+.gedi-table-sort:before {
+    content: map-get($gedi-map, "table-sort");
+}
+.gedi-table-view:before {
+    content: map-get($gedi-map, "table-view");
+}
+.gedi-tablet:before {
+    content: map-get($gedi-map, "tablet");
+}
+.gedi-tag-12:before {
+    content: map-get($gedi-map, "tag-12");
+}
+.gedi-tag-22:before {
+    content: map-get($gedi-map, "tag-22");
+}
+.gedi-tag-32:before {
+    content: map-get($gedi-map, "tag-32");
+}
+.gedi-tag-group-12:before {
+    content: map-get($gedi-map, "tag-group-12");
+}
+.gedi-tag-group-22:before {
+    content: map-get($gedi-map, "tag-group-22");
+}
+.gedi-tag-group-32:before {
+    content: map-get($gedi-map, "tag-group-32");
+}
+.gedi-tag-group:before {
+    content: map-get($gedi-map, "tag-group");
+}
+.gedi-tag-search:before {
+    content: map-get($gedi-map, "tag-search");
+}
+.gedi-tag-smart:before {
+    content: map-get($gedi-map, "tag-smart");
+}
+.gedi-tag-visibility:before {
+    content: map-get($gedi-map, "tag-visibility");
+}
+.gedi-tag:before {
+    content: map-get($gedi-map, "tag");
+}
+.gedi-team-member-shift-left:before {
+    content: map-get($gedi-map, "team-member-shift-left");
+}
+.gedi-team-member-shift-right:before {
+    content: map-get($gedi-map, "team-member-shift-right");
+}
+.gedi-template:before {
+    content: map-get($gedi-map, "template");
+}
+.gedi-templates-32:before {
+    content: map-get($gedi-map, "templates-32");
+}
+.gedi-textformat-aligncenter:before {
+    content: map-get($gedi-map, "textformat-aligncenter");
+}
+.gedi-textformat-alignjustify:before {
+    content: map-get($gedi-map, "textformat-alignjustify");
+}
+.gedi-textformat-alignleft:before {
+    content: map-get($gedi-map, "textformat-alignleft");
+}
+.gedi-textformat-alignright:before {
+    content: map-get($gedi-map, "textformat-alignright");
+}
+.gedi-textformat-bold:before {
+    content: map-get($gedi-map, "textformat-bold");
+}
+.gedi-textformat-italic:before {
+    content: map-get($gedi-map, "textformat-italic");
+}
+.gedi-textformat-listordered:before {
+    content: map-get($gedi-map, "textformat-listordered");
+}
+.gedi-textformat-listunordered:before {
+    content: map-get($gedi-map, "textformat-listunordered");
+}
+.gedi-textformat-rteditor:before {
+    content: map-get($gedi-map, "textformat-rteditor");
+}
+.gedi-textformat-strike:before {
+    content: map-get($gedi-map, "textformat-strike");
+}
+.gedi-textformat-textcolor:before {
+    content: map-get($gedi-map, "textformat-textcolor");
+}
+.gedi-textformat-underline:before {
+    content: map-get($gedi-map, "textformat-underline");
+}
+.gedi-threshold-statistics:before {
+    content: map-get($gedi-map, "threshold-statistics");
+}
+.gedi-time-32:before {
+    content: map-get($gedi-map, "time-32");
+}
+.gedi-time-series-tag:before {
+    content: map-get($gedi-map, "time-series-tag");
+}
+.gedi-time-units:before {
+    content: map-get($gedi-map, "time-units");
+}
+.gedi-timezone:before {
+    content: map-get($gedi-map, "timezone");
+}
+.gedi-tm-data-entry:before {
+    content: map-get($gedi-map, "tm-data-entry");
+}
+.gedi-train-32:before {
+    content: map-get($gedi-map, "train-32");
+}
+.gedi-translation:before {
+    content: map-get($gedi-map, "translation");
+}
+.gedi-transpose:before {
+    content: map-get($gedi-map, "transpose");
+}
+.gedi-tree-collapse:before {
+    content: map-get($gedi-map, "tree-collapse");
+}
+.gedi-tree-expand:before {
+    content: map-get($gedi-map, "tree-expand");
+}
+.gedi-truck-32:before {
+    content: map-get($gedi-map, "truck-32");
+}
+.gedi-type:before {
+    content: map-get($gedi-map, "type");
+}
+.gedi-unconsolidate:before {
+    content: map-get($gedi-map, "unconsolidate");
+}
+.gedi-undo:before {
+    content: map-get($gedi-map, "undo");
+}
+.gedi-ungrouped-tab-group:before {
+    content: map-get($gedi-map, "ungrouped-tab-group");
+}
+.gedi-unlink:before {
+    content: map-get($gedi-map, "unlink");
+}
+.gedi-unlocked:before {
+    content: map-get($gedi-map, "unlocked");
+}
+.gedi-unmerge:before {
+    content: map-get($gedi-map, "unmerge");
+}
+.gedi-unpin:before {
+    content: map-get($gedi-map, "unpin");
+}
+.gedi-uom:before {
+    content: map-get($gedi-map, "uom");
+}
+.gedi-upload:before {
+    content: map-get($gedi-map, "upload");
+}
+.gedi-user-add:before {
+    content: map-get($gedi-map, "user-add");
+}
+.gedi-user-hierarchy:before {
+    content: map-get($gedi-map, "user-hierarchy");
+}
+.gedi-user-key:before {
+    content: map-get($gedi-map, "user-key");
+}
+.gedi-user-not-allowed:before {
+    content: map-get($gedi-map, "user-not-allowed");
+}
+.gedi-user-remove:before {
+    content: map-get($gedi-map, "user-remove");
+}
+.gedi-user-reset:before {
+    content: map-get($gedi-map, "user-reset");
+}
+.gedi-user-settings:before {
+    content: map-get($gedi-map, "user-settings");
+}
+.gedi-user-verified:before {
+    content: map-get($gedi-map, "user-verified");
+}
+.gedi-user:before {
+    content: map-get($gedi-map, "user");
+}
+.gedi-users-32:before {
+    content: map-get($gedi-map, "users-32");
+}
+.gedi-users:before {
+    content: map-get($gedi-map, "users");
+}
+.gedi-versions-32:before {
+    content: map-get($gedi-map, "versions-32");
+}
+.gedi-view-datasheet:before {
+    content: map-get($gedi-map, "view-datasheet");
+}
+.gedi-view-inbox:before {
+    content: map-get($gedi-map, "view-inbox");
+}
+.gedi-view-list:before {
+    content: map-get($gedi-map, "view-list");
+}
+.gedi-view-recommendation-32:before {
+    content: map-get($gedi-map, "view-recommendation-32");
+}
+.gedi-website:before {
+    content: map-get($gedi-map, "website");
+}
+.gedi-wind-turbine-32:before {
+    content: map-get($gedi-map, "wind-turbine-32");
+}
+.gedi-x-axis-22:before {
+    content: map-get($gedi-map, "x-axis-22");
+}
+.gedi-x-axis:before {
+    content: map-get($gedi-map, "x-axis");
+}
+.gedi-xy-axis-22:before {
+    content: map-get($gedi-map, "xy-axis-22");
+}
+.gedi-xy-axis:before {
+    content: map-get($gedi-map, "xy-axis");
+}
+.gedi-y-axis-22:before {
+    content: map-get($gedi-map, "y-axis-22");
+}
+.gedi-y-axis:before {
+    content: map-get($gedi-map, "y-axis");
+}
+.gedi-zoom-generic-22:before {
+    content: map-get($gedi-map, "zoom-generic-22");
+}
+.gedi-zoom-in-22:before {
+    content: map-get($gedi-map, "zoom-in-22");
+}
+.gedi-zoom-in:before {
+    content: map-get($gedi-map, "zoom-in");
+}
+.gedi-zoom-out-22:before {
+    content: map-get($gedi-map, "zoom-out-22");
+}
+.gedi-zoom-out-one-level-22:before {
+    content: map-get($gedi-map, "zoom-out-one-level-22");
+}
+.gedi-zoom-out:before {
+    content: map-get($gedi-map, "zoom-out");
+}
+.gedi-zoom-toolbar-22:before {
+    content: map-get($gedi-map, "zoom-toolbar-22");
+}

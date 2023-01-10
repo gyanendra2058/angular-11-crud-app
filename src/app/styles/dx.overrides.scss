@@ -1,0 +1,389 @@
+@import 'px-design';
+
+/*********************************** DX-SWITCH OVERRIDES ***********************************/
+.dx-switch-wrapper {
+    position: relative !important;
+    padding: 11px !important;
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    left: -10px !important;
+    top: -10px !important;
+    overflow: hidden !important;
+    vertical-align: middle !important;
+}
+.dx-switch {
+    width: 40px !important;
+    height: 14px !important;
+}
+.dx-switch.dx-state-readonly .dx-switch-handle:before,
+.dx-switch.dx-state-disabled .dx-switch-handle:before {
+    background-color: #bdbdbd !important;
+}
+.dx-switch.dx-state-readonly .dx-switch-container:before,
+.dx-switch.dx-state-disabled .dx-switch-container:before {
+    background-color: rgba(0, 0, 0, 0.12) !important;
+}
+.dx-switch.dx-state-active .dx-switch-handle:before,
+.dx-switch.dx-state-focused .dx-switch-handle:before {
+    -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 50% !important;
+}
+.dx-switch-on-value.dx-state-readonly.dx-state-focused .dx-switch-handle:before,
+.dx-switch.dx-state-readonly.dx-state-focused .dx-switch-handle:before {
+    -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 50% !important;
+}
+.dx-switch-container {
+    height: 20px !important;
+    overflow: visible !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: #fff !important;
+}
+.dx-switch-container:before {
+    position: absolute !important;
+    content: '' !important;
+    width: 100% !important;
+    height: 14px !important;
+    border-radius: 500px !important;
+    background-color: #9e9e9e !important;
+    margin: 3px 0 !important;
+}
+.dx-switch-inner {
+    width: 200% !important;
+    height: 100% !important;
+}
+.dx-switch-on,
+.dx-switch-off {
+    -webkit-flex-shrink: 0 !important;
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0 !important;
+    float: left !important;
+    padding: 4px 0 !important;
+    width: 50% !important;
+    height: 20px !important;
+    color: transparent !important;
+    text-align: center !important;
+    line-height: 100% !important;
+}
+.dx-switch-on {
+    background: transparent !important;
+}
+.dx-switch-off {
+    display: none !important;
+    padding-bottom: 10px !important;
+    background-color: transparent !important;
+}
+.dx-switch-handle {
+    -webkit-flex-basis: 20px !important;
+    -ms-flex-preferred-size: 20px !important;
+    flex-basis: 20px !important;
+    -webkit-flex-shrink: 0 !important;
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    float: left !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #fafafa !important;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2) !important;
+    border-radius: 50% !important;
+    border: 1px solid #ddd !important;
+    margin-top: 0;
+}
+.dx-switch-handle:before {
+    display: block !important;
+    content: ' ' !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #fafafa !important;
+    border-radius: 50% !important;
+    -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
+}
+.dx-switch-on-value .dx-switch-container:before {
+    background-color: rgba(9, 129, 156, 1.0) !important;
+}
+.dx-switch-on-value .dx-switch-handle:before {
+    background-color: #03A9F4;
+}
+.dx-switch-on-value.dx-state-active .dx-switch-handle:before,
+.dx-switch-on-value.dx-state-focused .dx-switch-handle:before {
+    -webkit-box-shadow: 0 0 0 6px rgba(9, 129, 156, 0.1) !important;
+    box-shadow: 0 0 0 6px rgba(9, 129, 156, 0.1) !important;
+    border-radius: 50% !important;
+}
+.dx-rtl .dx-switch .dx-switch-on,
+.dx-switch.dx-rtl .dx-switch-on,
+.dx-rtl .dx-switch .dx-switch-off,
+.dx-switch.dx-rtl .dx-switch-off {
+    float: right !important;
+    padding-left: 16px !important;
+    padding-right: 2px !important;
+}
+.dx-rtl .dx-switch .dx-switch-off,
+.dx-switch.dx-rtl .dx-switch-off {
+    margin-left: 0 !important;
+}
+.dx-rtl .dx-switch .dx-switch-handle,
+.dx-switch.dx-rtl .dx-switch-handle {
+    float: right !important;
+    margin-left: 0 !important;
+    margin-right: -20px !important;
+}
+.dx-rtl .dx-switch .dx-switch-container,
+.dx-switch.dx-rtl .dx-switch-container {
+    margin: 0 0 0 -6px !important;
+}
+
+/* Re-styling toast messages
+    TODO: display the gedi icons instead of svgs as background
+*/
+
+/* Toast Messages */
+.dx-toast-content {
+    border-radius: 0 !important;
+    height: 40px !important;
+    width: 100% !important;
+    overflow-y: auto;
+    display: table;
+}
+
+.dx-toast-message {
+    font-weight: normal !important;
+    line-height: 16px;
+    white-space: pre-line;
+    width: inherit;
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+/* dx-toast messages don't have a close button - fake one here */
+.dx-toast-message:after {
+    float: right;
+    /* content: url('node_modules/act-shared-components/dist/shared-lib/icons/px-utl/close_white.svg') !important; */
+    font-size: larger;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    height: 18px !important;
+    width: 18px !important;
+}
+
+.dx-toast-error {
+    background-color: #f34336 !important;
+}
+/* .dx-toast-error .dx-toast-icon::before {
+    background-image: url('node_modules/act-shared-components/dist/shared-lib/icons/px-utl/failure_white.svg') !important;
+} */
+.dx-toast-warning {
+    background-color: #fec600 !important;
+    color: #4c6472;
+}
+/* .dx-toast-warning .dx-toast-icon {
+    background-image: url('node_modules/act-shared-components/dist/shared-lib/icons/px-utl/failure.svg') !important;
+}
+.dx-toast-warning .dx-toast-message:after {
+    content:url('node_modules/act-shared-components/dist/shared-lib/icons/px-utl/close.svg') !important;
+} */
+.dx-toast-info {
+    background-color: #1479c9 !important;
+}
+/* .dx-toast-info .dx-toast-icon {
+    background-image: url('node_modules/act-shared-components/dist/shared-lib/icons/px-utl/information_white.svg') !important;
+} */
+.dx-toast-success {
+    background-color: #7fae1b !important;
+}
+/* .dx-toast-success .dx-toast-icon {
+    background-image: url('node_modules/act-shared-components/dist/shared-lib/icons/px-utl/confirmed_white.svg') !important;;
+} */
+
+.dx-popup-wrapper {
+    .dx-overlay-content {
+        .dx-popup-title { // style for header text on popups
+            .dx-item-content.dx-toolbar-item-content {
+                padding: 10px 0 0 5px;
+                color: $gray18;
+                font-size: 20px;
+            }
+        }
+
+        label {
+            color: $gray14;
+        }
+    }
+}
+
+.dx-popup-content {
+    padding: 0 !important; /* these are used on popups, some need content going to the edge, so remove padding */
+}
+
+.dx-toast-custom.dx-toast-content {
+    padding: 0 !important; /* need customized toast popups to be able to reach edges */
+}
+
+.dx-sortable-placeholder {
+
+    &.dx-sortable-placeholder-inside {
+        border-color: rgb(90,191,248) !important; /* $cyan6=rgb(90,191,248) */
+        background-color: #5abff840 !important; /* $cyan6 with added transparency as DX overlays this */
+    }
+    &:not(.dx-sortable-placeholder-inside) {
+        // For the drop line when drag/dropping a tag between charts, use a thicker, custom blue line. Note that the
+        // technique here does not fully generalize well... if in the future there are other places where we drag/drop
+        // across controls but don't want the thicker line, we will need to adjust or add more logic to dictate styles.
+        border-width: 0 !important;
+        background-color: rgb(90,191,248) !important; /* $cyan6=rgb(90,191,248) */
+        margin-top: -3px !important;
+        height: 5px !important;
+    }
+}
+
+.dx-button {
+    color: $white;
+    background-color: $primary-default;
+
+    &.transparent { // useful when we use a button on an icon
+        background-color: transparent;
+
+        &.dx-state-hover, &.dx-state-active, &.dx-state-focused, &.dx-state-disabled {
+            background-color: transparent;
+        }
+    }
+
+    &.dx-state-hover, &.dx-state-focused {
+        color: $white;
+        background-color: $primary-hover;
+    }
+    &.dx-state-active {
+        color: $white;
+        background-color: $primary-pressed;
+    }
+
+    &.dx-button-has-text .dx-button-content {
+        padding: 6px 15px 6px !important; /* lessen the padding within text buttons */
+    }
+}
+
+.dx-radiobutton {
+    .dx-radiobutton-icon-checked .dx-radiobutton-icon-dot {
+        /* adjust radio button selection inner circle color and circle circumference/size */
+        margin-top: -20px;
+        margin-left: 3px;
+        width: 12px;
+        height: 12px;
+        background: rgb(9,129,156); /* $select-default  radio button color */
+        border-radius: 6px;
+    }
+    .dx-radiobutton-icon:before {
+        height: 16px;
+        width: 16px;
+        margin-bottom: 5px;
+        border-color: rgb(116,139,153) !important; /* $gray9: radio button outer circle */
+    }
+
+    &.dx-state-hover, &.dx-state-active { // styles for both hover and pressed ("active") state
+        .dx-radiobutton-icon:before {
+            border-color: rgb(6,87,105) !important; /* $select-hover: radio button outer circle */
+        }
+
+        .dx-radiobutton-icon-checked .dx-radiobutton-icon-dot {
+            background: rgb(6,87,105) !important; /* $select-hover: radio button inner selection circle */
+        }
+
+    }
+}
+
+.dx-texteditor {
+    &.dx-editor-outlined {
+        border: 0;
+        border-bottom: 1px solid $gray8;
+
+        &:not(.dx-texteditor-empty).dx-state-focused { // TODO: checking with Chuck if this change in color should only be when focused. If not, remove dx-state-focused class.
+            border-bottom: 1px solid $select-default; // spec has a different underline color when there's text input
+        }
+    }
+}
+
+.dx-texteditor-input {
+    padding-left: 2px;
+}
+.dx-texteditor.dx-editor-outlined.dx-state-readonly .dx-texteditor-input {
+    cursor: default;
+}
+
+// replace the inline dx-validator invalid badge with unicode alert
+.dx-invalid.dx-texteditor.dx-editor-outlined.dx-show-invalid-badge .dx-texteditor-input-container:after {
+    color: $status-red4;
+    font-weight: normal;
+    content: "\26a0";
+    cursor: pointer !important;
+    background-color: inherit;
+    font-size: 16px;
+    text-align: end;
+    margin-top: -9px;
+}
+
+// tag-editor readonly placeholder
+tag-editor dx-number-box.dx-state-readonly > div > div.dx-texteditor-input-container > div.dx-placeholder {
+    color: inherit;
+    width: 100%;
+}
+tag-editor dx-number-box.dx-state-readonly > div > div.dx-texteditor-input-container > div.dx-placeholder:before {
+    padding: 0 0 0 10px;
+    content: "\2014"; // em dash
+}
+tag-editor dx-number-box.dx-state-readonly > div > div.dx-texteditor-input-container > div.dx-placeholder:after {
+}
+
+// tag-editor customized values
+tag-editor dx-number-box.customized > div > div.dx-texteditor-input-container > input {
+    font-weight: 600;
+}
+
+// ****** Compare Assets ****** //
+
+#compareAssetsContextBrowser li.dx-treeview-node.dx-treeview-item-with-checkbox.dx-state-focused:active,
+#compareAssetsContextBrowser div.dx-item.dx-treeview-item.dx-state-hover:active {
+    background: $select-default !important;
+    color: white !important;
+}
+
+#compareAssetsContextBrowser .dx-checkbox-checked .dx-checkbox-icon:before {
+    color: $select-default;
+    font-weight: bold;
+}
+
+#compareAssetsContextBrowser aux-hierarchy-control > div > section {
+    padding: 0 5px !important;
+}
+
+#compareAssetsContextBrowser aux-hierarchy-control div.search-box {
+    width: 100%;
+}
+
+// hide the expand/collapse icons for the assets under blueprint nodes
+#compareAssetsContextBrowser ul > li > ul > li  div.dx-treeview-toggle-item-visibility {
+    display: none !important;
+}
+
+#fetch-cases-checkbox {
+    span.dx-checkbox-text {
+        width: fit-content;
+        padding-top: 3px;
+    }
+
+    .dx-checkbox-icon {
+        height: 18px;
+        width: 18px;
+        border: 1px solid $gray9 !important;
+    }
+}
+
+// ******  ****** //

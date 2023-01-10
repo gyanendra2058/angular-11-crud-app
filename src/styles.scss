@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/styles/px-settings.colors.scss';
+@import './app/styles/svg-icons.scss';
+
+body {
+  font-family: "GE Inspira Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: $gray18;
+}
+
+[class^="gedi-"], [class*=" gedi-"] {
+    cursor: pointer;
+
+    &.gedi-button, &.gedi-info-button {
+        &:hover {
+            color: $status_blue3; // put the button class on gedi icons to get hover color
+        }
+    }
+}
+
+.dx-sortable-clone {
+    background: $white;
+    border: 1px solid $gray18;
+    opacity: 1 !important; // override DX built-in setting of having opacity
+
+    > .dx-treeview-item.dx-state-hover {
+        color: $gray18 !important; // override DX built-in color...need a really specific selector as theirs is specific as well
+    }
+
+    // import our node style at this level so that the dragging indicator renders in the same styling
+    // (it is put at a global level in the DOM)
+}
+
+label {
+    color: $gray14;
+}
+
+div.tribute-container {
+	position: absolute;
+	min-width: 40px;
+	top: 0;
+	left: 0;
+	height: auto;
+	max-height: 175px;
+	max-width: 300px;
+	overflow: auto;
+	display: block;
+	background: #d8e0e5;
+	z-index: 999999;
+}
+div.tribute-container ul {
+	background: #d8e0e5;
+	padding-left: 0px;
+	margin-top: 0px;
+	color: white;
+	list-style: none;
+}
+div.tribute-container li {
+	padding: 5px 5px;
+	cursor: pointer;
+}
+div.tribute-container li.highlight, .tribute-container li:hover {
+	background: #008080;
+}
+.tribute-container li span {
+	font-weight: bold;
+}
+.tribute-container .menu-highlighted {
+	font-weight: bold;
+}

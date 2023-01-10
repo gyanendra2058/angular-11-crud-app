@@ -1,6 +1,6 @@
 {
-    "name": "apm-sm-charts-ui",
-    "short_name": "apm-sm-charts-ui",
+    "name": "apm-templates-ui",
+    "short_name": "apm-templates-ui",
     "theme_color": "#1976d2",
     "background_color": "#fafafa",
     "display": "standalone",

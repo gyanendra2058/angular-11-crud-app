@@ -1,0 +1,65 @@
+{
+    "items": [
+        {
+            "key": "@base-font-family",
+            "value": "\"GE Inspira Sans\", Helvetica, Arial, sans-serif"
+        },
+        {
+            "key": "@base-border-radius",
+            "value": "0"
+        },
+        {
+            "key": "@base-border-radius-small",
+            "value": "0"
+        },
+        {
+            "key": "@base-link-color",
+            "value": "rgba(69, 172, 229, 1)"
+        },
+        {
+            "key": "@button-normal-bg",
+            "value": "rgba(216, 224, 229, 1)"
+        },
+        {
+            "key": "@button-default-border-color",
+            "value": "rgba(45, 109, 163, 0)"
+        },
+        {
+            "key": "@button-normal-border-color",
+            "value": "rgba(221, 221, 221, 0)"
+        },
+        {
+            "key": "@button-success-border-color",
+            "value": "rgba(76, 174, 76, 0)"
+        },
+        {
+            "key": "@button-danger-border-color",
+            "value": "rgba(212, 63, 58, 0)"
+        },
+        {
+            "key": "@button-normal-color",
+            "value": "rgba(44, 64, 76, 1)"
+        },
+        {
+            "key": "@button-group-normal-selected-color",
+            "value": "rgba(44, 64, 76, 1)"
+        },
+        {
+            "key": "@button-default-color",
+            "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+            "key": "@base-label-color",
+            "value": "rgba(18, 31, 38, 1)"
+        },
+        {
+            "key": "@base-icon-color",
+            "value": "rgba(18, 31, 38, 1)"
+        }
+    ],
+    "baseTheme": "generic.light",
+    "outputColorScheme": "dx-generic-apm",
+    "makeSwatch": false,
+    "version": "20.1.7",
+    "widgets": []
+}

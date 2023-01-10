@@ -28,9 +28,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.light.css",
+              "node_modules/devextreme/dist/css/dx.generic.apm.css",
+              "src/assets/icons/gedi/gedi.css",
+              "src/app/styles/dx.overrides.scss",
+              "node_modules/@aux/datagrid/styles/icon-styles.css",
+              "node_modules/@aux/datagrid/styles/font.css",
+              "node_modules/@aux/datagrid/dist/_datagrid.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/lodash/lodash.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/devextreme/dist/js/dx.all.js",
+              "node_modules/@aux/datagrid/dist/datagrid.js"
+            ]
           },
           "configurations": {
             "production": {

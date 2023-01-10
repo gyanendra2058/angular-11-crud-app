@@ -1,8 +1,10 @@
 {
-    "eslint.format.enable": true,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "typescript.tsdk": "node_modules/typescript/lib"
+  "deno.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "markdown.extension.toc.levels": "2..3",
+  "cSpell.words": [
+    "postbuild"
+  ]
 }

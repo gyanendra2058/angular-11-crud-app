@@ -1,0 +1,8 @@
+@import './px-settings.colors.scss';
+$inuit-enable-margins--small: true;
+$inuit-enable-margins--tiny: true;
+// @import "px-spacing-design/trumps.spacing";
+// @import 'px-headings-design/base.headings';
+@import 'svg-icons.scss';
+
+label { color: $gray20; }

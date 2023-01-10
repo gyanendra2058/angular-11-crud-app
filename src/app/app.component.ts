@@ -3,17 +3,20 @@ import {
   Component,
   Injector,
   NgModuleFactory,
+  OnInit,
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
 import { Router, Event, NavigationEnd } from '@angular/router';
+import { GetDynamicCollections } from './store/app/app.actions';
+import { Dispatch } from '@ngxs-labs/dispatch-decorator';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild('mainContainer', { read: ViewContainerRef })
   container!: ViewContainerRef;
 
@@ -26,6 +29,11 @@ export class AppComponent {
       async (routeEvent: Event) =>
         await this._loadTemplatesModuleDynamically(routeEvent)
     );
+  }
+
+  @Dispatch() getDynamicCollections = (lang: string) => new GetDynamicCollections(lang);
+  ngOnInit(): void {
+    this.getDynamicCollections('en-US');
   }
 
   private async _loadTemplatesModuleDynamically(
