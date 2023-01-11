@@ -1,98 +1,108 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { LoadOptions } from 'devextreme/data';
 declare let DevExpress: any;
 
 interface DataGridComponent extends HTMLElement {
-  configOptionsCB: any,
+  configOptionsCB: any;
 }
 
 @Component({
   selector: 'app-alert-templates',
   templateUrl: './alert-templates.component.html',
   styleUrls: ['./alert-templates.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-
-export class AlertTemplatesComponent implements OnInit, AfterViewInit {
+export class AlertTemplatesComponent implements AfterViewInit {
   @ViewChild('alertTemplates') datagridComponentRef!: ElementRef<DataGridComponent>;
 
-  constructor(private renderer: Renderer2
-  ) { }
+  constructor(private renderer: Renderer2) {}
 
-  ngOnInit(): void { }
-
-  ngAfterViewInit() {
-    this.renderer.setProperty(this.datagridComponentRef.nativeElement, 'configOptionsCB', this.getDataGridConfig());
+  ngAfterViewInit(): void {
+    this.renderer.setProperty(
+      this.datagridComponentRef.nativeElement,
+      'configOptionsCB',
+      this.getDataGridConfig()
+    );
   }
 
-  getDataGridConfig(): any {
+  getDataGridConfig(): unknown {
     const columns = this.getAttributeColumns();
     const config = {
       dataSource: new DevExpress.data.CustomStore({
         pageSize: 50,
-        load: this.loadAlertTemplates.bind(this)
+        load: this.loadAlertTemplates.bind(this),
       }),
-      columns
+      columns,
     };
     return config;
   }
 
-  loadAlertTemplates(loadOptions: LoadOptions) {
-    console.log(loadOptions)
-    return Promise.resolve([])
+  loadAlertTemplates(loadOptions: LoadOptions): Promise<Array<unknown>> {
+    console.log(loadOptions);
+    return Promise.resolve([]);
   }
 
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   getAttributeColumns() {
-    const metaInfo: Array<any> = [{
-      caption: 'ID',
-      dataType: 'string',
-      showInGrid: true,
-      visible: true,
-    },
-    {
-      caption: 'Name',
-      dataType: 'string',
-      showInGrid: true,
-      visible: true,
-    },
-    {
-      caption: 'Description',
-      dataType: 'string',
-      showInGrid: true,
-      visible: true,
-    },
-    {
-      caption: 'Severity',
-      dataType: 'string',
-      showInGrid: true,
-      visible: true,
-    },
-    {
-      caption: 'Source',
-      dataType: 'string',
-      showInGrid: true,
-      visible: true,
-    },
-    {
-      caption: 'Type',
-      dataType: 'string',
-      showInGrid: true,
-      visible: true,
-    },
-    {
-      caption: 'Created On',
-      dataType: 'datetime',
-      showInGrid: true,
-      visible: true,
-    },
-    {
-      caption: 'Updated On',
-      dataType: 'datetime',
-      showInGrid: true,
-      visible: true,
-    }
+    const metaInfo: Array<unknown> = [
+      {
+        caption: 'ID',
+        dataType: 'string',
+        showInGrid: true,
+        visible: true,
+      },
+      {
+        caption: 'Name',
+        dataType: 'string',
+        showInGrid: true,
+        visible: true,
+      },
+      {
+        caption: 'Description',
+        dataType: 'string',
+        showInGrid: true,
+        visible: true,
+      },
+      {
+        caption: 'Severity',
+        dataType: 'string',
+        showInGrid: true,
+        visible: true,
+      },
+      {
+        caption: 'Source',
+        dataType: 'string',
+        showInGrid: true,
+        visible: true,
+      },
+      {
+        caption: 'Type',
+        dataType: 'string',
+        showInGrid: true,
+        visible: true,
+      },
+      {
+        caption: 'Created On',
+        dataType: 'datetime',
+        showInGrid: true,
+        visible: true,
+      },
+      {
+        caption: 'Updated On',
+        dataType: 'datetime',
+        showInGrid: true,
+        visible: true,
+      },
     ];
 
-    return metaInfo
+    return metaInfo;
   }
 }

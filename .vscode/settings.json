@@ -4,7 +4,4 @@
     "source.fixAll.eslint": true
   },
   "markdown.extension.toc.levels": "2..3",
-  "cSpell.words": [
-    "postbuild"
-  ]
 }

@@ -27,21 +27,15 @@ export class VcapServices {
   }
 
   public getTrustedUri(): string {
-    return (
-      this.serviceCredentials['stuf']['credentials']['trustedIssuer'] || null
-    );
+    return this.serviceCredentials['stuf']['credentials']['trustedIssuer'] || null;
   }
 
   public getUserServicesUrl(): any {
-    return (
-      this.serviceCredentials['stuf']['credentials']['userServiceUrl'] || null
-    );
+    return this.serviceCredentials['stuf']['credentials']['userServiceUrl'] || null;
   }
 
   public getTenantServicesUrl(): any {
-    return (
-      this.serviceCredentials['stuf']['credentials']['tenantServiceUrl'] || null
-    );
+    return this.serviceCredentials['stuf']['credentials']['tenantServiceUrl'] || null;
   }
 
   public getUaaUrl(): any {

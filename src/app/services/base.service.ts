@@ -1,8 +1,4 @@
-import {
-  HttpClient,
-  HttpErrorResponse,
-  HttpHeaders,
-} from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
@@ -89,7 +85,7 @@ export abstract class BaseService {
     hh = hh.append('timeout', '120000');
     hh = hh.append('requestor', 'ui');
     if (options && options.headers) {
-      for (let key in options.headers) {
+      for (const key in options.headers) {
         hh = hh.append(key, options.headers[key]);
       }
     }
@@ -112,6 +108,7 @@ export abstract class BaseService {
         };
       } else if (error.error && error.status === 400) {
         errorMessage = error.error;
+        // eslint-disable-next-line no-prototype-builtins
       } else if (error.error && error.error.hasOwnProperty('responseobject')) {
         errorMessage = error.error;
       } else if (

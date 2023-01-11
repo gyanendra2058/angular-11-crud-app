@@ -26,8 +26,7 @@ export class AppComponent implements OnInit {
     private readonly _router: Router
   ) {
     this._router.events.subscribe(
-      async (routeEvent: Event) =>
-        await this._loadTemplatesModuleDynamically(routeEvent)
+      async (routeEvent: Event) => await this._loadTemplatesModuleDynamically(routeEvent)
     );
   }
 
@@ -36,9 +35,7 @@ export class AppComponent implements OnInit {
     this.getDynamicCollections('en-US');
   }
 
-  private async _loadTemplatesModuleDynamically(
-    routeEvent: Event
-  ): Promise<any> {
+  private async _loadTemplatesModuleDynamically(routeEvent: Event): Promise<any> {
     if (routeEvent instanceof NavigationEnd) {
       if (routeEvent.url === '/#/alerts') {
         await this._loadAlertTemplatesModule();
@@ -60,9 +57,8 @@ export class AppComponent implements OnInit {
     );
     const moduleFactory = await this.loadModuleFactory(AlertTemplatesModule);
     const moduleRef = moduleFactory.create(this._injector);
-    const factory = moduleRef.componentFactoryResolver.resolveComponentFactory(
-      AlertTemplatesComponent
-    );
+    const factory =
+      moduleRef.componentFactoryResolver.resolveComponentFactory(AlertTemplatesComponent);
     this.container.createComponent(factory);
   }
 
@@ -76,9 +72,8 @@ export class AppComponent implements OnInit {
     );
     const moduleFactory = await this.loadModuleFactory(CaseTemplatesModule);
     const moduleRef = moduleFactory.create(this._injector);
-    const factory = moduleRef.componentFactoryResolver.resolveComponentFactory(
-      CaseTemplatesComponent
-    );
+    const factory =
+      moduleRef.componentFactoryResolver.resolveComponentFactory(CaseTemplatesComponent);
     this.container.createComponent(factory);
   }
 

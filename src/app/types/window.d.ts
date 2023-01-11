@@ -1,7 +1,12 @@
-export { };
+export {};
 
 declare global {
-    interface Window {
-        nav: any;
-    }
+  interface Window {
+    nav: {
+      preferences: {
+        TimeZone: 'string';
+        preferredLocale: 'string';
+      };
+    };
+  }
 }

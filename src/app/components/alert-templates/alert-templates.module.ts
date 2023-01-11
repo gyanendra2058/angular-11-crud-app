@@ -15,8 +15,6 @@ import { TranslateModule } from '@ngx-translate/core';
     AlertTemplatesRoutingModule,
     NgxsModule.forFeature([AlertTemplatesState]),
   ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AlertTemplatesModule {}

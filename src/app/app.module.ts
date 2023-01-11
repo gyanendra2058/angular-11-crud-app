@@ -8,11 +8,7 @@ import { NgxsModule, NoopNgxsExecutionStrategy, Store } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { environment } from '../environments/environment';
-import {
-  TranslateModule,
-  TranslateLoader,
-  TranslateService,
-} from '@ngx-translate/core';
+import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 
 import { NgxsDispatchPluginModule } from '@ngxs-labs/dispatch-decorator';
 import { NgxsActionsExecutingModule } from '@ngxs-labs/actions-executing';
@@ -40,7 +36,7 @@ export function loadTranslations(store: Store): () => Promise<any> {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (httpLoaderFactory),
+        useFactory: httpLoaderFactory,
         deps: [HttpClient],
       },
     }),
@@ -60,12 +56,15 @@ export function loadTranslations(store: Store): () => Promise<any> {
       disabled: environment.production,
     }),
   ],
-  providers: [{
-    provide: APP_INITIALIZER,
-    useFactory: loadTranslations,
-    deps: [Store],
-    multi: true
-  }, TranslateService],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: loadTranslations,
+      deps: [Store],
+      multi: true,
+    },
+    TranslateService,
+  ],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,5 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class CaseTemplatesComponent implements OnInit {
   constructor() {}
 
+  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit(): void {}
 }

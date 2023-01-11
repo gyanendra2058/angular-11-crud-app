@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import * as ld from 'logdown';
-import {Logger} from 'logdown';
+import { Logger } from 'logdown';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LogService {
   private readonly _logDown = ld;
@@ -14,7 +14,7 @@ export class LogService {
     seaGreen: '#348a5d',
     dimGray: '#6a645b',
     brown: '#ad2c34',
-    peru: '#9c8041'
+    peru: '#9c8041',
   };
 
   get logDown(): any {
@@ -37,7 +37,7 @@ export class LogService {
     return this._createLogger(`help:${name}`, this._colorPalette.peru);
   }
 
-  private _createLogger(name: string, color: string): Logger{
-    return this._logDown(name, {prefixColor: color, markdown: true});
+  private _createLogger(name: string, color: string): Logger {
+    return this._logDown(name, { prefixColor: color, markdown: true });
   }
 }
