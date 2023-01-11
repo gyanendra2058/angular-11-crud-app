@@ -7,9 +7,9 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { Router, Event, NavigationEnd } from '@angular/router';
-import { GetDynamicCollections } from './store/app/app.actions';
+import { Event, NavigationEnd, Router } from '@angular/router';
 import { Dispatch } from '@ngxs-labs/dispatch-decorator';
+import { GetDynamicCollections } from './store/app/app.actions';
 
 @Component({
   selector: 'app-root',
@@ -30,12 +30,12 @@ export class AppComponent implements OnInit {
     );
   }
 
-  @Dispatch() getDynamicCollections = (lang: string) => new GetDynamicCollections(lang);
+  @Dispatch() getDynamicCollections = (lang: string): unknown => new GetDynamicCollections(lang);
   ngOnInit(): void {
     this.getDynamicCollections('en-US');
   }
 
-  private async _loadTemplatesModuleDynamically(routeEvent: Event): Promise<any> {
+  private async _loadTemplatesModuleDynamically(routeEvent: Event): Promise<void> {
     if (routeEvent instanceof NavigationEnd) {
       if (routeEvent.url === '/#/alerts') {
         await this._loadAlertTemplatesModule();
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  async _loadAlertTemplatesModule() {
+  async _loadAlertTemplatesModule(): Promise<void> {
     const { AlertTemplatesModule } = await import(
       './components/alert-templates/alert-templates.module'
     );
@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
     this.container.createComponent(factory);
   }
 
-  async _loadCaseTemplatesModule() {
+  async _loadCaseTemplatesModule(): Promise<void> {
     const { CaseTemplatesModule } = await import(
       './components/case-templates/case-templates.module'
     );
@@ -77,7 +77,7 @@ export class AppComponent implements OnInit {
     this.container.createComponent(factory);
   }
 
-  private async loadModuleFactory(t: any) {
+  private async loadModuleFactory(t: any) : Promise<any> {
     if (t instanceof NgModuleFactory) {
       return t;
     } else {

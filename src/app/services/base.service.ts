@@ -5,7 +5,7 @@ import { catchError } from 'rxjs/operators';
 export abstract class BaseService {
   constructor(protected readonly _http: HttpClient) {}
 
-  protected getOld(url: string, options?: any): any {
+  protected getOld(url: string, options?: Record<string | number | symbol, unknown>): any {
     if (options === null) {
       return this._http.get(url).pipe(catchError(this.handleError));
     } else {
@@ -13,7 +13,7 @@ export abstract class BaseService {
     }
   }
 
-  protected get(url: string, options?: any): any {
+  protected get(url: string, options?: Record<string | number | symbol, unknown>): any {
     if (options === null) {
       return this._http.get(url).pipe(catchError(this.handleError));
     } else {
@@ -26,7 +26,11 @@ export abstract class BaseService {
     }
   }
 
-  protected put(url: string, body: any, options?: any) {
+  protected put(
+    url: string,
+    body: Record<string | number | symbol, unknown>,
+    options?: Record<string | number | symbol, unknown>
+  ): Observable<unknown> {
     return this._http
       .put(url, body, {
         ...this.httpOptionsForPost(options),
@@ -35,7 +39,10 @@ export abstract class BaseService {
       .pipe(catchError(this.handleError));
   }
 
-  protected delete(url: string, options?: any) {
+  protected delete(
+    url: string,
+    options?: Record<string | number | symbol, unknown>
+  ): Observable<unknown> {
     return this._http
       .delete(url, {
         ...this.httpOptionsForPost(options),
@@ -44,7 +51,11 @@ export abstract class BaseService {
       .pipe(catchError(this.handleError));
   }
 
-  protected patch(url: string, body: any, options?: any) {
+  protected patch(
+    url: string,
+    body: Record<string | number | symbol, unknown>,
+    options?: Record<string | number | symbol, unknown>
+  ): Observable<unknown> {
     return this._http
       .patch(url, body, {
         ...this.httpOptionsForPost(options),
@@ -57,7 +68,11 @@ export abstract class BaseService {
    * Standard implementation of PUT, using the options for PUT, and error handler in a standard way.
    * TODO: NEED TO OVERRIDE THE TENANT ID HERE SOMEHOW FOR NOTES API
    */
-  protected post(url: string, body: any, options?: any) {
+  protected post(
+    url: string,
+    body: Record<string | number | symbol, unknown>,
+    options?: Record<string | number | symbol, unknown>
+  ): Observable<unknown> {
     return this._http
       .post(url, body, {
         ...options,

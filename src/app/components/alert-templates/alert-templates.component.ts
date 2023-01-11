@@ -3,7 +3,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  OnInit,
   Renderer2,
   ViewChild,
 } from '@angular/core';
