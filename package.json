@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm run lint && npm test"
     }
   },
   "lint-staged": {
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "format": "prettier --write \"src/**/*.{ts,css,html}\" \"server/**/*.ts\"",
+    "prettier": "prettier --write \"src/**/*.{ts,css,html}\" \"server/**/*.ts\"",
     "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\" \"server/**/*.ts\"",
     "start:server": "node ./server/dist/server.js",
     "start": "concurrently \"npm run build:app:watch\" \"npm run start:server\"",
@@ -107,10 +107,10 @@
     "concurrently": "~6.2.0",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^8.6.0",
-    "husky": "^5.2.0",
+    "husky": "^4.3.8",
     "jest": "^27.2.5",
     "jest-preset-angular": "12.2.3",
-    "lint-staged": "^13.1.0",
+    "lint-staged": "^10.5.4",
     "path-parse": "1.0.7",
     "predix-cdn": "git+https://a338aa7cb7a0fbc4ba7b89533b1584771918d81d:x-oauth-basic@github.build.ge.com/tools/cdnify-microapp.git#1.1.6",
     "prettier": "^2.8.1",
