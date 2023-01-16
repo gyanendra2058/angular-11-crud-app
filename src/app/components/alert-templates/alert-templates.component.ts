@@ -34,7 +34,7 @@ export class AlertTemplatesComponent implements OnInit, AfterViewInit, OnDestroy
   constructor(private renderer: Renderer2, private _gridDataSource: TemplatesGridDataSource) {}
 
   ngOnInit(): void {
-    this._setupGridSource()
+    this._setupGridSource() 
   }
 
   ngAfterViewInit(): void {
