@@ -1,1790 +1,1791 @@
 @font-face {
-    font-family: "gedi";
-    src: url("./gedi.ttf?51f1b9562fbec3e6e3bc0e161e327a8e") format("truetype"),
-url("./gedi.woff?51f1b9562fbec3e6e3bc0e161e327a8e") format("woff"),
-url("./gedi.woff2?51f1b9562fbec3e6e3bc0e161e327a8e") format("woff2"),
-url("./gedi.eot?51f1b9562fbec3e6e3bc0e161e327a8e#iefix") format("embedded-opentype"),
-url("./gedi.svg?51f1b9562fbec3e6e3bc0e161e327a8e#gedi") format("svg");
+  font-family: 'gedi';
+  src: url('./gedi.ttf?51f1b9562fbec3e6e3bc0e161e327a8e') format('truetype'),
+    url('./gedi.woff?51f1b9562fbec3e6e3bc0e161e327a8e') format('woff'),
+    url('./gedi.woff2?51f1b9562fbec3e6e3bc0e161e327a8e') format('woff2'),
+    url('./gedi.eot?51f1b9562fbec3e6e3bc0e161e327a8e#iefix') format('embedded-opentype'),
+    url('./gedi.svg?51f1b9562fbec3e6e3bc0e161e327a8e#gedi') format('svg');
 }
 
-[class^="gedi-"], [class*=" gedi-"] {
-    font-family: gedi !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+[class^='gedi-'],
+[class*=' gedi-'] {
+  font-family: gedi !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .gedi-add-22:before {
-    content: "\f101";
+  content: '\f101';
 }
 .gedi-add-brush-22:before {
-    content: "\f102";
+  content: '\f102';
 }
 .gedi-add-column-left:before {
-    content: "\f103";
+  content: '\f103';
 }
 .gedi-add-column-right:before {
-    content: "\f104";
+  content: '\f104';
 }
 .gedi-add-details:before {
-    content: "\f105";
+  content: '\f105';
 }
 .gedi-add-doc:before {
-    content: "\f106";
+  content: '\f106';
 }
 .gedi-add-record-22:before {
-    content: "\f107";
+  content: '\f107';
 }
 .gedi-add-row-bottom:before {
-    content: "\f108";
+  content: '\f108';
 }
 .gedi-add-row-top:before {
-    content: "\f109";
+  content: '\f109';
 }
 .gedi-add-tab:before {
-    content: "\f10a";
+  content: '\f10a';
 }
 .gedi-add-time-series:before {
-    content: "\f10b";
+  content: '\f10b';
 }
 .gedi-add-to-health-indicator:before {
-    content: "\f10c";
+  content: '\f10c';
 }
 .gedi-add:before {
-    content: "\f10d";
+  content: '\f10d';
 }
 .gedi-added:before {
-    content: "\f10e";
+  content: '\f10e';
 }
 .gedi-administration-32:before {
-    content: "\f10f";
+  content: '\f10f';
 }
 .gedi-ahm:before {
-    content: "\f110";
+  content: '\f110';
 }
 .gedi-airplane-32:before {
-    content: "\f111";
+  content: '\f111';
 }
 .gedi-airplane-engine-32:before {
-    content: "\f112";
+  content: '\f112';
 }
 .gedi-airport-32-copy-13:before {
-    content: "\f113";
+  content: '\f113';
 }
 .gedi-airport-32:before {
-    content: "\f114";
+  content: '\f114';
 }
 .gedi-alarm-blocking:before {
-    content: "\f115";
+  content: '\f115';
 }
 .gedi-alarm-printer:before {
-    content: "\f116";
+  content: '\f116';
 }
 .gedi-alarm:before {
-    content: "\f117";
+  content: '\f117';
 }
 .gedi-alert-32:before {
-    content: "\f118";
+  content: '\f118';
 }
 .gedi-alert-add:before {
-    content: "\f119";
+  content: '\f119';
 }
 .gedi-alert-query:before {
-    content: "\f11a";
+  content: '\f11a';
 }
 .gedi-alert:before {
-    content: "\f11b";
+  content: '\f11b';
 }
 .gedi-all-points-in-area-22:before {
-    content: "\f11c";
+  content: '\f11c';
 }
 .gedi-alphabet-sort:before {
-    content: "\f11d";
+  content: '\f11d';
 }
 .gedi-ams-tag:before {
-    content: "\f11e";
+  content: '\f11e';
 }
 .gedi-analysis-32:before {
-    content: "\f11f";
+  content: '\f11f';
 }
 .gedi-analytics-32:before {
-    content: "\f120";
+  content: '\f120';
 }
 .gedi-and-alt:before {
-    content: "\f121";
+  content: '\f121';
 }
 .gedi-and:before {
-    content: "\f122";
+  content: '\f122';
 }
 .gedi-apply-analysis:before {
-    content: "\f123";
+  content: '\f123';
 }
 .gedi-apply-component:before {
-    content: "\f124";
+  content: '\f124';
 }
 .gedi-apply-template:before {
-    content: "\f125";
+  content: '\f125';
 }
 .gedi-arrow-down-12:before {
-    content: "\f126";
+  content: '\f126';
 }
 .gedi-arrow-down:before {
-    content: "\f127";
+  content: '\f127';
 }
 .gedi-arrow-left-12:before {
-    content: "\f128";
+  content: '\f128';
 }
 .gedi-arrow-left:before {
-    content: "\f129";
+  content: '\f129';
 }
 .gedi-arrow-right-12:before {
-    content: "\f12a";
+  content: '\f12a';
 }
 .gedi-arrow-right:before {
-    content: "\f12b";
+  content: '\f12b';
 }
 .gedi-arrow-up-12:before {
-    content: "\f12c";
+  content: '\f12c';
 }
 .gedi-arrow-up:before {
-    content: "\f12d";
+  content: '\f12d';
 }
 .gedi-asset-12:before {
-    content: "\f12e";
+  content: '\f12e';
 }
 .gedi-asset-22:before {
-    content: "\f12f";
+  content: '\f12f';
 }
 .gedi-asset-32:before {
-    content: "\f130";
+  content: '\f130';
 }
 .gedi-asset-add:before {
-    content: "\f131";
+  content: '\f131';
 }
 .gedi-asset-group-12:before {
-    content: "\f132";
+  content: '\f132';
 }
 .gedi-asset-group:before {
-    content: "\f133";
+  content: '\f133';
 }
 .gedi-asset:before {
-    content: "\f134";
+  content: '\f134';
 }
 .gedi-associated-links:before {
-    content: "\f135";
+  content: '\f135';
 }
 .gedi-attachment:before {
-    content: "\f136";
+  content: '\f136';
 }
 .gedi-attribute-32:before {
-    content: "\f137";
+  content: '\f137';
 }
 .gedi-attribute-hierarchy:before {
-    content: "\f138";
+  content: '\f138';
 }
 .gedi-attribute-set:before {
-    content: "\f139";
+  content: '\f139';
 }
 .gedi-attribute:before {
-    content: "\f13a";
+  content: '\f13a';
 }
 .gedi-automobile-32:before {
-    content: "\f13b";
+  content: '\f13b';
 }
 .gedi-average:before {
-    content: "\f13c";
+  content: '\f13c';
 }
 .gedi-back-to-browser:before {
-    content: "\f13d";
+  content: '\f13d';
 }
 .gedi-base-rule:before {
-    content: "\f13e";
+  content: '\f13e';
 }
 .gedi-below-t-min:before {
-    content: "\f13f";
+  content: '\f13f';
 }
 .gedi-bento-box:before {
-    content: "\f140";
+  content: '\f140';
 }
 .gedi-boiler-32:before {
-    content: "\f141";
+  content: '\f141';
 }
 .gedi-bookmark:before {
-    content: "\f142";
+  content: '\f142';
 }
 .gedi-bring-to-front-22:before {
-    content: "\f143";
+  content: '\f143';
 }
 .gedi-brush-22:before {
-    content: "\f144";
+  content: '\f144';
 }
 .gedi-brush:before {
-    content: "\f145";
+  content: '\f145';
 }
 .gedi-bug-32:before {
-    content: "\f146";
+  content: '\f146';
 }
 .gedi-bulk-data:before {
-    content: "\f147";
+  content: '\f147';
 }
 .gedi-calculator:before {
-    content: "\f148";
+  content: '\f148';
 }
 .gedi-calendar-32:before {
-    content: "\f149";
+  content: '\f149';
 }
 .gedi-calendar-add:before {
-    content: "\f14a";
+  content: '\f14a';
 }
 .gedi-calendar-ban:before {
-    content: "\f14b";
+  content: '\f14b';
 }
 .gedi-calendar-production-event:before {
-    content: "\f14c";
+  content: '\f14c';
 }
 .gedi-calendar-remove:before {
-    content: "\f14d";
+  content: '\f14d';
 }
 .gedi-calendar:before {
-    content: "\f14e";
+  content: '\f14e';
 }
 .gedi-camera-22:before {
-    content: "\f14f";
+  content: '\f14f';
 }
 .gedi-camera-flip-22:before {
-    content: "\f150";
+  content: '\f150';
 }
 .gedi-camera-flip-32:before {
-    content: "\f151";
+  content: '\f151';
 }
 .gedi-camera:before {
-    content: "\f152";
+  content: '\f152';
 }
 .gedi-card-add-22:before {
-    content: "\f153";
+  content: '\f153';
 }
 .gedi-cards-22:before {
-    content: "\f154";
+  content: '\f154';
 }
 .gedi-cards-menu-22:before {
-    content: "\f155";
+  content: '\f155';
 }
 .gedi-cards:before {
-    content: "\f156";
+  content: '\f156';
 }
 .gedi-cart:before {
-    content: "\f157";
+  content: '\f157';
 }
 .gedi-case_query:before {
-    content: "\f158";
+  content: '\f158';
 }
 .gedi-case-add-22:before {
-    content: "\f159";
+  content: '\f159';
 }
 .gedi-case-add:before {
-    content: "\f15a";
+  content: '\f15a';
 }
 .gedi-case-edit:before {
-    content: "\f15b";
+  content: '\f15b';
 }
 .gedi-case-node:before {
-    content: "\f15c";
+  content: '\f15c';
 }
 .gedi-case:before {
-    content: "\f15d";
+  content: '\f15d';
 }
 .gedi-cases-32:before {
-    content: "\f15e";
+  content: '\f15e';
 }
 .gedi-catalog-32:before {
-    content: "\f15f";
+  content: '\f15f';
 }
 .gedi-cell-tower-32:before {
-    content: "\f160";
+  content: '\f160';
 }
 .gedi-change-state:before {
-    content: "\f161";
+  content: '\f161';
 }
 .gedi-chart-bar:before {
-    content: "\f162";
+  content: '\f162';
 }
 .gedi-chart-line-22:before {
-    content: "\f163";
+  content: '\f163';
 }
 .gedi-chart-line:before {
-    content: "\f164";
+  content: '\f164';
 }
 .gedi-chart-pie:before {
-    content: "\f165";
+  content: '\f165';
 }
 .gedi-chart-residual-22:before {
-    content: "\f166";
+  content: '\f166';
 }
 .gedi-chart-residual:before {
-    content: "\f167";
+  content: '\f167';
 }
 .gedi-chart-settings-22:before {
-    content: "\f168";
+  content: '\f168';
 }
 .gedi-chart-trend:before {
-    content: "\f169";
+  content: '\f169';
 }
 .gedi-chat-32:before {
-    content: "\f16a";
+  content: '\f16a';
 }
 .gedi-check:before {
-    content: "\f16b";
+  content: '\f16b';
 }
 .gedi-chevron-down:before {
-    content: "\f16c";
+  content: '\f16c';
 }
 .gedi-chevron-left:before {
-    content: "\f16d";
+  content: '\f16d';
 }
 .gedi-chevron-right:before {
-    content: "\f16e";
+  content: '\f16e';
 }
 .gedi-chevron-up:before {
-    content: "\f16f";
+  content: '\f16f';
 }
 .gedi-circle-22:before {
-    content: "\f170";
+  content: '\f170';
 }
 .gedi-circle:before {
-    content: "\f171";
+  content: '\f171';
 }
 .gedi-class-32:before {
-    content: "\f172";
+  content: '\f172';
 }
 .gedi-class:before {
-    content: "\f173";
+  content: '\f173';
 }
 .gedi-clock:before {
-    content: "\f174";
+  content: '\f174';
 }
 .gedi-close-small:before {
-    content: "\f175";
+  content: '\f175';
 }
 .gedi-close:before {
-    content: "\f176";
+  content: '\f176';
 }
 .gedi-closest-point-22:before {
-    content: "\f177";
+  content: '\f177';
 }
 .gedi-closest-point-series-22:before {
-    content: "\f178";
+  content: '\f178';
 }
 .gedi-cloud:before {
-    content: "\f179";
+  content: '\f179';
 }
 .gedi-code:before {
-    content: "\f17a";
+  content: '\f17a';
 }
 .gedi-cogs:before {
-    content: "\f17b";
+  content: '\f17b';
 }
 .gedi-collapse-22:before {
-    content: "\f17c";
+  content: '\f17c';
 }
 .gedi-collapse-card:before {
-    content: "\f17d";
+  content: '\f17d';
 }
 .gedi-collapse:before {
-    content: "\f17e";
+  content: '\f17e';
 }
 .gedi-column-chooser:before {
-    content: "\f17f";
+  content: '\f17f';
 }
 .gedi-comment-22:before {
-    content: "\f180";
+  content: '\f180';
 }
 .gedi-comment-32:before {
-    content: "\f181";
+  content: '\f181';
 }
 .gedi-comment:before {
-    content: "\f182";
+  content: '\f182';
 }
 .gedi-compare-22:before {
-    content: "\f183";
+  content: '\f183';
 }
 .gedi-compare:before {
-    content: "\f184";
+  content: '\f184';
 }
 .gedi-component:before {
-    content: "\f185";
+  content: '\f185';
 }
 .gedi-computer-parameters:before {
-    content: "\f186";
+  content: '\f186';
 }
 .gedi-condenser-32:before {
-    content: "\f187";
+  content: '\f187';
 }
 .gedi-confirmed-22:before {
-    content: "\f188";
+  content: '\f188';
 }
 .gedi-confirmed:before {
-    content: "\f189";
+  content: '\f189';
 }
 .gedi-consolidate:before {
-    content: "\f18a";
+  content: '\f18a';
 }
 .gedi-constant:before {
-    content: "\f18b";
+  content: '\f18b';
 }
 .gedi-contains:before {
-    content: "\f18c";
+  content: '\f18c';
 }
 .gedi-content-validation:before {
-    content: "\f18d";
+  content: '\f18d';
 }
 .gedi-controller-32:before {
-    content: "\f18e";
+  content: '\f18e';
 }
 .gedi-convert-type:before {
-    content: "\f18f";
+  content: '\f18f';
 }
 .gedi-cooling-tower-32:before {
-    content: "\f190";
+  content: '\f190';
 }
 .gedi-copy-existing:before {
-    content: "\f191";
+  content: '\f191';
 }
 .gedi-copy:before {
-    content: "\f192";
+  content: '\f192';
 }
 .gedi-cost-benefit:before {
-    content: "\f193";
+  content: '\f193';
 }
 .gedi-count:before {
-    content: "\f194";
+  content: '\f194';
 }
 .gedi-create-datasheet:before {
-    content: "\f195";
+  content: '\f195';
 }
 .gedi-create-entity:before {
-    content: "\f196";
+  content: '\f196';
 }
 .gedi-create-recommendation:before {
-    content: "\f197";
+  content: '\f197';
 }
 .gedi-create-relationship:before {
-    content: "\f198";
+  content: '\f198';
 }
 .gedi-create-what-if:before {
-    content: "\f199";
+  content: '\f199';
 }
 .gedi-cross-reference:before {
-    content: "\f19a";
+  content: '\f19a';
 }
 .gedi-crosshair-22:before {
-    content: "\f19b";
+  content: '\f19b';
 }
 .gedi-crosshair:before {
-    content: "\f19c";
+  content: '\f19c';
 }
 .gedi-cube-calculated-measure:before {
-    content: "\f19d";
+  content: '\f19d';
 }
 .gedi-dashboard-32:before {
-    content: "\f19e";
+  content: '\f19e';
 }
 .gedi-dashboard:before {
-    content: "\f19f";
+  content: '\f19f';
 }
 .gedi-data-quality:before {
-    content: "\f1a0";
+  content: '\f1a0';
 }
 .gedi-data-resolution:before {
-    content: "\f1a1";
+  content: '\f1a1';
 }
 .gedi-data-source:before {
-    content: "\f1a2";
+  content: '\f1a2';
 }
 .gedi-data-sources-32:before {
-    content: "\f1a3";
+  content: '\f1a3';
 }
 .gedi-database-32:before {
-    content: "\f1a4";
+  content: '\f1a4';
 }
 .gedi-database-code:before {
-    content: "\f1a5";
+  content: '\f1a5';
 }
 .gedi-datasheet-info:before {
-    content: "\f1a6";
+  content: '\f1a6';
 }
 .gedi-datasheet-item:before {
-    content: "\f1a7";
+  content: '\f1a7';
 }
 .gedi-deactivated-indicator:before {
-    content: "\f1a8";
+  content: '\f1a8';
 }
 .gedi-delete-22:before {
-    content: "\f1a9";
+  content: '\f1a9';
 }
 .gedi-delete-column:before {
-    content: "\f1aa";
+  content: '\f1aa';
 }
 .gedi-delete-entity:before {
-    content: "\f1ab";
+  content: '\f1ab';
 }
 .gedi-delete-node:before {
-    content: "\f1ac";
+  content: '\f1ac';
 }
 .gedi-delete-relationship:before {
-    content: "\f1ad";
+  content: '\f1ad';
 }
 .gedi-delete-row:before {
-    content: "\f1ae";
+  content: '\f1ae';
 }
 .gedi-delete:before {
-    content: "\f1af";
+  content: '\f1af';
 }
 .gedi-deleted:before {
-    content: "\f1b0";
+  content: '\f1b0';
 }
 .gedi-delta-22:before {
-    content: "\f1b1";
+  content: '\f1b1';
 }
 .gedi-delta:before {
-    content: "\f1b2";
+  content: '\f1b2';
 }
 .gedi-deploy:before {
-    content: "\f1b3";
+  content: '\f1b3';
 }
 .gedi-deployment-22:before {
-    content: "\f1b4";
+  content: '\f1b4';
 }
 .gedi-deployment-configuration:before {
-    content: "\f1b5";
+  content: '\f1b5';
 }
 .gedi-deployments-32:before {
-    content: "\f1b6";
+  content: '\f1b6';
 }
 .gedi-desktop-32:before {
-    content: "\f1b7";
+  content: '\f1b7';
 }
 .gedi-desktop:before {
-    content: "\f1b8";
+  content: '\f1b8';
 }
 .gedi-dev-ops-32:before {
-    content: "\f1b9";
+  content: '\f1b9';
 }
 .gedi-device:before {
-    content: "\f1ba";
+  content: '\f1ba';
 }
 .gedi-diagram-tree:before {
-    content: "\f1bb";
+  content: '\f1bb';
 }
 .gedi-digital-twin-32:before {
-    content: "\f1bc";
+  content: '\f1bc';
 }
 .gedi-dimension:before {
-    content: "\f1bd";
+  content: '\f1bd';
 }
 .gedi-divide:before {
-    content: "\f1be";
+  content: '\f1be';
 }
 .gedi-doc:before {
-    content: "\f1bf";
+  content: '\f1bf';
 }
 .gedi-document-csv:before {
-    content: "\f1c0";
+  content: '\f1c0';
 }
 .gedi-document-pdf:before {
-    content: "\f1c1";
+  content: '\f1c1';
 }
 .gedi-document-word:before {
-    content: "\f1c2";
+  content: '\f1c2';
 }
 .gedi-document-xls:before {
-    content: "\f1c3";
+  content: '\f1c3';
 }
 .gedi-does-not-contain:before {
-    content: "\f1c4";
+  content: '\f1c4';
 }
 .gedi-download:before {
-    content: "\f1c5";
+  content: '\f1c5';
 }
 .gedi-draw-stripe-22:before {
-    content: "\f1c6";
+  content: '\f1c6';
 }
 .gedi-draw-stripe:before {
-    content: "\f1c7";
+  content: '\f1c7';
 }
 .gedi-drop-22:before {
-    content: "\f1c8";
+  content: '\f1c8';
 }
 .gedi-drop:before {
-    content: "\f1c9";
+  content: '\f1c9';
 }
 .gedi-edge-box-32:before {
-    content: "\f1ca";
+  content: '\f1ca';
 }
 .gedi-edit-alert:before {
-    content: "\f1cb";
+  content: '\f1cb';
 }
 .gedi-edit-entity:before {
-    content: "\f1cc";
+  content: '\f1cc';
 }
 .gedi-edit-form:before {
-    content: "\f1cd";
+  content: '\f1cd';
 }
 .gedi-edit:before {
-    content: "\f1ce";
+  content: '\f1ce';
 }
 .gedi-edited:before {
-    content: "\f1cf";
+  content: '\f1cf';
 }
 .gedi-email:before {
-    content: "\f1d0";
+  content: '\f1d0';
 }
 .gedi-enable-multiple-selection:before {
-    content: "\f1d1";
+  content: '\f1d1';
 }
 .gedi-ends-with:before {
-    content: "\f1d2";
+  content: '\f1d2';
 }
 .gedi-entity-current:before {
-    content: "\f1d3";
+  content: '\f1d3';
 }
 .gedi-entity:before {
-    content: "\f1d4";
+  content: '\f1d4';
 }
 .gedi-equal:before {
-    content: "\f1d5";
+  content: '\f1d5';
 }
 .gedi-error-22:before {
-    content: "\f1d6";
+  content: '\f1d6';
 }
 .gedi-error:before {
-    content: "\f1d7";
+  content: '\f1d7';
 }
 .gedi-exclamation-circled:before {
-    content: "\f1d8";
+  content: '\f1d8';
 }
 .gedi-exclamation:before {
-    content: "\f1d9";
+  content: '\f1d9';
 }
 .gedi-expand-22:before {
-    content: "\f1da";
+  content: '\f1da';
 }
 .gedi-expand-radius-22:before {
-    content: "\f1db";
+  content: '\f1db';
 }
 .gedi-expand-text-area:before {
-    content: "\f1dc";
+  content: '\f1dc';
 }
 .gedi-expand:before {
-    content: "\f1dd";
+  content: '\f1dd';
 }
 .gedi-exponent:before {
-    content: "\f1de";
+  content: '\f1de';
 }
 .gedi-factory:before {
-    content: "\f1df";
+  content: '\f1df';
 }
 .gedi-failure:before {
-    content: "\f1e0";
+  content: '\f1e0';
 }
 .gedi-favorite-12:before {
-    content: "\f1e1";
+  content: '\f1e1';
 }
 .gedi-favorite:before {
-    content: "\f1e2";
+  content: '\f1e2';
 }
 .gedi-favorited-12:before {
-    content: "\f1e3";
+  content: '\f1e3';
 }
 .gedi-field-constant:before {
-    content: "\f1e4";
+  content: '\f1e4';
 }
 .gedi-field-map:before {
-    content: "\f1e5";
+  content: '\f1e5';
 }
 .gedi-field-value-change-condition-node:before {
-    content: "\f1e6";
+  content: '\f1e6';
 }
 .gedi-filter-12:before {
-    content: "\f1e7";
+  content: '\f1e7';
 }
 .gedi-filter-active-12:before {
-    content: "\f1e8";
+  content: '\f1e8';
 }
 .gedi-filter-active:before {
-    content: "\f1e9";
+  content: '\f1e9';
 }
 .gedi-filter:before {
-    content: "\f1ea";
+  content: '\f1ea';
 }
 .gedi-find:before {
-    content: "\f1eb";
+  content: '\f1eb';
 }
 .gedi-fit:before {
-    content: "\f1ec";
+  content: '\f1ec';
 }
 .gedi-flag:before {
-    content: "\f1ed";
+  content: '\f1ed';
 }
 .gedi-fleet-32:before {
-    content: "\f1ee";
+  content: '\f1ee';
 }
 .gedi-focus:before {
-    content: "\f1ef";
+  content: '\f1ef';
 }
 .gedi-folder-add:before {
-    content: "\f1f0";
+  content: '\f1f0';
 }
 .gedi-folder-closed:before {
-    content: "\f1f1";
+  content: '\f1f1';
 }
 .gedi-folder-open:before {
-    content: "\f1f2";
+  content: '\f1f2';
 }
 .gedi-folder-shift-left:before {
-    content: "\f1f3";
+  content: '\f1f3';
 }
 .gedi-folder-shift-right:before {
-    content: "\f1f4";
+  content: '\f1f4';
 }
 .gedi-forecast:before {
-    content: "\f1f5";
+  content: '\f1f5';
 }
 .gedi-formula:before {
-    content: "\f1f6";
+  content: '\f1f6';
 }
 .gedi-fullscreen-22:before {
-    content: "\f1f7";
+  content: '\f1f7';
 }
 .gedi-fullscreen:before {
-    content: "\f1f8";
+  content: '\f1f8';
 }
 .gedi-gas-turbine-32:before {
-    content: "\f1f9";
+  content: '\f1f9';
 }
 .gedi-gateway-32:before {
-    content: "\f1fa";
+  content: '\f1fa';
 }
 .gedi-ge-tag:before {
-    content: "\f1fb";
+  content: '\f1fb';
 }
 .gedi-generate-report:before {
-    content: "\f1fc";
+  content: '\f1fc';
 }
 .gedi-go-to-source:before {
-    content: "\f1fd";
+  content: '\f1fd';
 }
 .gedi-greater-than-or-equal:before {
-    content: "\f1fe";
+  content: '\f1fe';
 }
 .gedi-greater-than:before {
-    content: "\f1ff";
+  content: '\f1ff';
 }
 .gedi-grid:before {
-    content: "\f200";
+  content: '\f200';
 }
 .gedi-group-data-by:before {
-    content: "\f201";
+  content: '\f201';
 }
 .gedi-group-data:before {
-    content: "\f202";
+  content: '\f202';
 }
 .gedi-group:before {
-    content: "\f203";
+  content: '\f203';
 }
 .gedi-growth:before {
-    content: "\f204";
+  content: '\f204';
 }
 .gedi-health-alert:before {
-    content: "\f205";
+  content: '\f205';
 }
 .gedi-health-indicator:before {
-    content: "\f206";
+  content: '\f206';
 }
 .gedi-health-no-data:before {
-    content: "\f207";
+  content: '\f207';
 }
 .gedi-health-normal:before {
-    content: "\f208";
+  content: '\f208';
 }
 .gedi-health-warning:before {
-    content: "\f209";
+  content: '\f209';
 }
 .gedi-help-22:before {
-    content: "\f20a";
+  content: '\f20a';
 }
 .gedi-help:before {
-    content: "\f20b";
+  content: '\f20b';
 }
 .gedi-hide-22:before {
-    content: "\f20c";
+  content: '\f20c';
 }
 .gedi-hide-grid:before {
-    content: "\f20d";
+  content: '\f20d';
 }
 .gedi-hide:before {
-    content: "\f20e";
+  content: '\f20e';
 }
 .gedi-hierarchy-classic-22:before {
-    content: "\f20f";
+  content: '\f20f';
 }
 .gedi-hierarchy:before {
-    content: "\f210";
+  content: '\f210';
 }
 .gedi-history:before {
-    content: "\f211";
+  content: '\f211';
 }
 .gedi-home-32:before {
-    content: "\f212";
+  content: '\f212';
 }
 .gedi-home-set:before {
-    content: "\f213";
+  content: '\f213';
 }
 .gedi-home:before {
-    content: "\f214";
+  content: '\f214';
 }
 .gedi-hrsg-32:before {
-    content: "\f215";
+  content: '\f215';
 }
 .gedi-hypothesis-state:before {
-    content: "\f216";
+  content: '\f216';
 }
 .gedi-image:before {
-    content: "\f217";
+  content: '\f217';
 }
 .gedi-in-between:before {
-    content: "\f218";
+  content: '\f218';
 }
 .gedi-in-progress-22:before {
-    content: "\f219";
+  content: '\f219';
 }
 .gedi-information-22:before {
-    content: "\f21a";
+  content: '\f21a';
 }
 .gedi-information:before {
-    content: "\f21b";
+  content: '\f21b';
 }
 .gedi-ingestion-32:before {
-    content: "\f21c";
+  content: '\f21c';
 }
 .gedi-institution:before {
-    content: "\f21d";
+  content: '\f21d';
 }
 .gedi-inventory-22:before {
-    content: "\f21e";
+  content: '\f21e';
 }
 .gedi-is-null:before {
-    content: "\f21f";
+  content: '\f21f';
 }
 .gedi-k-consumed-22:before {
-    content: "\f220";
+  content: '\f220';
 }
 .gedi-k-dough-mixing-22:before {
-    content: "\f221";
+  content: '\f221';
 }
 .gedi-k-dough-up-22:before {
-    content: "\f222";
+  content: '\f222';
 }
 .gedi-k-hold-22:before {
-    content: "\f223";
+  content: '\f223';
 }
 .gedi-k-preparation-22:before {
-    content: "\f224";
+  content: '\f224';
 }
 .gedi-k-scrap-22:before {
-    content: "\f225";
+  content: '\f225';
 }
 .gedi-k-slurry-mixing-22:before {
-    content: "\f226";
+  content: '\f226';
 }
 .gedi-key:before {
-    content: "\f227";
+  content: '\f227';
 }
 .gedi-kpi-efficiency-32:before {
-    content: "\f228";
+  content: '\f228';
 }
 .gedi-kpi-general-32:before {
-    content: "\f229";
+  content: '\f229';
 }
 .gedi-kpi-heat-rate-32:before {
-    content: "\f22a";
+  content: '\f22a';
 }
 .gedi-kpi-output-32:before {
-    content: "\f22b";
+  content: '\f22b';
 }
 .gedi-lasso-22:before {
-    content: "\f22c";
+  content: '\f22c';
 }
 .gedi-lasso:before {
-    content: "\f22d";
+  content: '\f22d';
 }
 .gedi-last:before {
-    content: "\f22e";
+  content: '\f22e';
 }
 .gedi-layout:before {
-    content: "\f22f";
+  content: '\f22f';
 }
 .gedi-less-than-or-equal:before {
-    content: "\f230";
+  content: '\f230';
 }
 .gedi-less-than:before {
-    content: "\f231";
+  content: '\f231';
 }
 .gedi-level-five:before {
-    content: "\f232";
+  content: '\f232';
 }
 .gedi-level-four:before {
-    content: "\f233";
+  content: '\f233';
 }
 .gedi-level-one:before {
-    content: "\f234";
+  content: '\f234';
 }
 .gedi-level-three:before {
-    content: "\f235";
+  content: '\f235';
 }
 .gedi-level-two:before {
-    content: "\f236";
+  content: '\f236';
 }
 .gedi-lightbulb-32:before {
-    content: "\f237";
+  content: '\f237';
 }
 .gedi-lightbulb:before {
-    content: "\f238";
+  content: '\f238';
 }
 .gedi-line-32:before {
-    content: "\f239";
+  content: '\f239';
 }
 .gedi-line-og-32:before {
-    content: "\f23a";
+  content: '\f23a';
 }
 .gedi-link:before {
-    content: "\f23b";
+  content: '\f23b';
 }
 .gedi-location:before {
-    content: "\f23c";
+  content: '\f23c';
 }
 .gedi-lock:before {
-    content: "\f23d";
+  content: '\f23d';
 }
 .gedi-locomotive-32:before {
-    content: "\f23e";
+  content: '\f23e';
 }
 .gedi-log-32:before {
-    content: "\f23f";
+  content: '\f23f';
 }
 .gedi-log-out:before {
-    content: "\f240";
+  content: '\f240';
 }
 .gedi-logic-gate:before {
-    content: "\f241";
+  content: '\f241';
 }
 .gedi-login-panel:before {
-    content: "\f242";
+  content: '\f242';
 }
 .gedi-machine-32:before {
-    content: "\f243";
+  content: '\f243';
 }
 .gedi-maintenance:before {
-    content: "\f244";
+  content: '\f244';
 }
 .gedi-manage-tml-group-components:before {
-    content: "\f245";
+  content: '\f245';
 }
 .gedi-mandatory:before {
-    content: "\f246";
+  content: '\f246';
 }
 .gedi-manufacturing-line-32:before {
-    content: "\f247";
+  content: '\f247';
 }
 .gedi-map:before {
-    content: "\f248";
+  content: '\f248';
 }
 .gedi-margin-currency:before {
-    content: "\f249";
+  content: '\f249';
 }
 .gedi-margin-value:before {
-    content: "\f24a";
+  content: '\f24a';
 }
 .gedi-math:before {
-    content: "\f24b";
+  content: '\f24b';
 }
 .gedi-maximum:before {
-    content: "\f24c";
+  content: '\f24c';
 }
 .gedi-mdx:before {
-    content: "\f24d";
+  content: '\f24d';
 }
 .gedi-measure:before {
-    content: "\f24e";
+  content: '\f24e';
 }
 .gedi-measurement-location-group:before {
-    content: "\f24f";
+  content: '\f24f';
 }
 .gedi-measurement-location:before {
-    content: "\f250";
+  content: '\f250';
 }
 .gedi-measurement-units:before {
-    content: "\f251";
+  content: '\f251';
 }
 .gedi-menu:before {
-    content: "\f252";
+  content: '\f252';
 }
 .gedi-message-32:before {
-    content: "\f253";
+  content: '\f253';
 }
 .gedi-microphone-22:before {
-    content: "\f254";
+  content: '\f254';
 }
 .gedi-microphone:before {
-    content: "\f255";
+  content: '\f255';
 }
 .gedi-microservice-32:before {
-    content: "\f256";
+  content: '\f256';
 }
 .gedi-minimum-production:before {
-    content: "\f257";
+  content: '\f257';
 }
 .gedi-minimum:before {
-    content: "\f258";
+  content: '\f258';
 }
 .gedi-mobile-menu:before {
-    content: "\f259";
+  content: '\f259';
 }
 .gedi-module-settings:before {
-    content: "\f25a";
+  content: '\f25a';
 }
 .gedi-more:before {
-    content: "\f25b";
+  content: '\f25b';
 }
 .gedi-move-axis-22:before {
-    content: "\f25c";
+  content: '\f25c';
 }
 .gedi-move-axis:before {
-    content: "\f25d";
+  content: '\f25d';
 }
 .gedi-move-handle:before {
-    content: "\f25e";
+  content: '\f25e';
 }
 .gedi-multiple-column:before {
-    content: "\f25f";
+  content: '\f25f';
 }
 .gedi-multiply:before {
-    content: "\f260";
+  content: '\f260';
 }
 .gedi-new-policy:before {
-    content: "\f261";
+  content: '\f261';
 }
 .gedi-new-window:before {
-    content: "\f262";
+  content: '\f262';
 }
 .gedi-node-execution:before {
-    content: "\f263";
+  content: '\f263';
 }
 .gedi-nominal-measurements:before {
-    content: "\f264";
+  content: '\f264';
 }
 .gedi-not-allowed:before {
-    content: "\f265";
+  content: '\f265';
 }
 .gedi-not-equal:before {
-    content: "\f266";
+  content: '\f266';
 }
 .gedi-note:before {
-    content: "\f267";
+  content: '\f267';
 }
 .gedi-notification-off-22:before {
-    content: "\f268";
+  content: '\f268';
 }
 .gedi-notification-off:before {
-    content: "\f269";
+  content: '\f269';
 }
 .gedi-notification:before {
-    content: "\f26a";
+  content: '\f26a';
 }
 .gedi-offline:before {
-    content: "\f26b";
+  content: '\f26b';
 }
 .gedi-online:before {
-    content: "\f26c";
+  content: '\f26c';
 }
 .gedi-opc-tag:before {
-    content: "\f26d";
+  content: '\f26d';
 }
 .gedi-open-record:before {
-    content: "\f26e";
+  content: '\f26e';
 }
 .gedi-optimize-strategy:before {
-    content: "\f26f";
+  content: '\f26f';
 }
 .gedi-or-alt:before {
-    content: "\f270";
+  content: '\f270';
 }
 .gedi-or:before {
-    content: "\f271";
+  content: '\f271';
 }
 .gedi-orchestration-32:before {
-    content: "\f272";
+  content: '\f272';
 }
 .gedi-orders-32:before {
-    content: "\f273";
+  content: '\f273';
 }
 .gedi-otc-tag:before {
-    content: "\f274";
+  content: '\f274';
 }
 .gedi-overdue-inspection-date:before {
-    content: "\f275";
+  content: '\f275';
 }
 .gedi-overflow-down:before {
-    content: "\f276";
+  content: '\f276';
 }
 .gedi-overflow-left:before {
-    content: "\f277";
+  content: '\f277';
 }
 .gedi-overflow-right:before {
-    content: "\f278";
+  content: '\f278';
 }
 .gedi-overflow-up:before {
-    content: "\f279";
+  content: '\f279';
 }
 .gedi-paintbrush:before {
-    content: "\f27a";
+  content: '\f27a';
 }
 .gedi-pan-22:before {
-    content: "\f27b";
+  content: '\f27b';
 }
 .gedi-pan:before {
-    content: "\f27c";
+  content: '\f27c';
 }
 .gedi-paste:before {
-    content: "\f27d";
+  content: '\f27d';
 }
 .gedi-pause:before {
-    content: "\f27e";
+  content: '\f27e';
 }
 .gedi-performance:before {
-    content: "\f27f";
+  content: '\f27f';
 }
 .gedi-phone-32:before {
-    content: "\f280";
+  content: '\f280';
 }
 .gedi-phone:before {
-    content: "\f281";
+  content: '\f281';
 }
 .gedi-pin-22:before {
-    content: "\f282";
+  content: '\f282';
 }
 .gedi-pin:before {
-    content: "\f283";
+  content: '\f283';
 }
 .gedi-pipeline-32:before {
-    content: "\f284";
+  content: '\f284';
 }
 .gedi-plant-32:before {
-    content: "\f285";
+  content: '\f285';
 }
 .gedi-play:before {
-    content: "\f286";
+  content: '\f286';
 }
 .gedi-point-control-panel:before {
-    content: "\f287";
+  content: '\f287';
 }
 .gedi-point-enumerations:before {
-    content: "\f288";
+  content: '\f288';
 }
 .gedi-point-value:before {
-    content: "\f289";
+  content: '\f289';
 }
 .gedi-point:before {
-    content: "\f28a";
+  content: '\f28a';
 }
 .gedi-policy-activated-indicator:before {
-    content: "\f28b";
+  content: '\f28b';
 }
 .gedi-policy-active-all:before {
-    content: "\f28c";
+  content: '\f28c';
 }
 .gedi-policy-active:before {
-    content: "\f28d";
+  content: '\f28d';
 }
 .gedi-policy-deactivate-all:before {
-    content: "\f28e";
+  content: '\f28e';
 }
 .gedi-policy-deactivate:before {
-    content: "\f28f";
+  content: '\f28f';
 }
 .gedi-policy-deactivated:before {
-    content: "\f290";
+  content: '\f290';
 }
 .gedi-policy-error-indicator:before {
-    content: "\f291";
+  content: '\f291';
 }
 .gedi-port:before {
-    content: "\f292";
+  content: '\f292';
 }
 .gedi-prd-component-identifier:before {
-    content: "\f293";
+  content: '\f293';
 }
 .gedi-predix-box-32:before {
-    content: "\f294";
+  content: '\f294';
 }
 .gedi-preferences:before {
-    content: "\f295";
+  content: '\f295';
 }
 .gedi-print:before {
-    content: "\f296";
+  content: '\f296';
 }
 .gedi-product-32:before {
-    content: "\f297";
+  content: '\f297';
 }
 .gedi-products-32:before {
-    content: "\f298";
+  content: '\f298';
 }
 .gedi-project-parameters:before {
-    content: "\f299";
+  content: '\f299';
 }
 .gedi-promote-to-asm:before {
-    content: "\f29a";
+  content: '\f29a';
 }
 .gedi-puzzle-piece:before {
-    content: "\f29b";
+  content: '\f29b';
 }
 .gedi-qr-code:before {
-    content: "\f29c";
+  content: '\f29c';
 }
 .gedi-query:before {
-    content: "\f29d";
+  content: '\f29d';
 }
 .gedi-question-mark:before {
-    content: "\f29e";
+  content: '\f29e';
 }
 .gedi-r-script:before {
-    content: "\f29f";
+  content: '\f29f';
 }
 .gedi-rail-yard-32:before {
-    content: "\f2a0";
+  content: '\f2a0';
 }
 .gedi-re-syncing:before {
-    content: "\f2a1";
+  content: '\f2a1';
 }
 .gedi-recommendation:before {
-    content: "\f2a2";
+  content: '\f2a2';
 }
 .gedi-record-add:before {
-    content: "\f2a3";
+  content: '\f2a3';
 }
 .gedi-redo:before {
-    content: "\f2a4";
+  content: '\f2a4';
 }
 .gedi-reference-document-shift-left:before {
-    content: "\f2a5";
+  content: '\f2a5';
 }
 .gedi-reference-document-shift-right:before {
-    content: "\f2a6";
+  content: '\f2a6';
 }
 .gedi-refresh-22:before {
-    content: "\f2a7";
+  content: '\f2a7';
 }
 .gedi-refresh-32:before {
-    content: "\f2a8";
+  content: '\f2a8';
 }
 .gedi-refresh:before {
-    content: "\f2a9";
+  content: '\f2a9';
 }
 .gedi-regenerate-plan:before {
-    content: "\f2aa";
+  content: '\f2aa';
 }
 .gedi-relationship-input-mode:before {
-    content: "\f2ab";
+  content: '\f2ab';
 }
 .gedi-reliability-distribution:before {
-    content: "\f2ac";
+  content: '\f2ac';
 }
 .gedi-reliability-growth:before {
-    content: "\f2ad";
+  content: '\f2ad';
 }
 .gedi-remainder:before {
-    content: "\f2ae";
+  content: '\f2ae';
 }
 .gedi-remove-brush-22:before {
-    content: "\f2af";
+  content: '\f2af';
 }
 .gedi-remove-stripe-22:before {
-    content: "\f2b0";
+  content: '\f2b0';
 }
 .gedi-remove-stripe:before {
-    content: "\f2b1";
+  content: '\f2b1';
 }
 .gedi-removed:before {
-    content: "\f2b2";
+  content: '\f2b2';
 }
 .gedi-rename:before {
-    content: "\f2b3";
+  content: '\f2b3';
 }
 .gedi-reply:before {
-    content: "\f2b4";
+  content: '\f2b4';
 }
 .gedi-report-32:before {
-    content: "\f2b5";
+  content: '\f2b5';
 }
 .gedi-report:before {
-    content: "\f2b6";
+  content: '\f2b6';
 }
 .gedi-reset-22:before {
-    content: "\f2b7";
+  content: '\f2b7';
 }
 .gedi-reset-zoom-22:before {
-    content: "\f2b8";
+  content: '\f2b8';
 }
 .gedi-reset:before {
-    content: "\f2b9";
+  content: '\f2b9';
 }
 .gedi-resize-22:before {
-    content: "\f2ba";
+  content: '\f2ba';
 }
 .gedi-return-value:before {
-    content: "\f2bb";
+  content: '\f2bb';
 }
 .gedi-risk-matrix:before {
-    content: "\f2bc";
+  content: '\f2bc';
 }
 .gedi-round:before {
-    content: "\f2bd";
+  content: '\f2bd';
 }
 .gedi-rounds:before {
-    content: "\f2be";
+  content: '\f2be';
 }
 .gedi-routes-32:before {
-    content: "\f2bf";
+  content: '\f2bf';
 }
 .gedi-rule:before {
-    content: "\f2c0";
+  content: '\f2c0';
 }
 .gedi-save-as-22:before {
-    content: "\f2c1";
+  content: '\f2c1';
 }
 .gedi-save-as:before {
-    content: "\f2c2";
+  content: '\f2c2';
 }
 .gedi-save-policy-model-as-instances:before {
-    content: "\f2c3";
+  content: '\f2c3';
 }
 .gedi-save:before {
-    content: "\f2c4";
+  content: '\f2c4';
 }
 .gedi-scan:before {
-    content: "\f2c5";
+  content: '\f2c5';
 }
 .gedi-screen-collapse:before {
-    content: "\f2c6";
+  content: '\f2c6';
 }
 .gedi-screen-expand:before {
-    content: "\f2c7";
+  content: '\f2c7';
 }
 .gedi-script-32:before {
-    content: "\f2c8";
+  content: '\f2c8';
 }
 .gedi-script:before {
-    content: "\f2c9";
+  content: '\f2c9';
 }
 .gedi-search:before {
-    content: "\f2ca";
+  content: '\f2ca';
 }
 .gedi-select-all:before {
-    content: "\f2cb";
+  content: '\f2cb';
 }
 .gedi-send-to-device:before {
-    content: "\f2cc";
+  content: '\f2cc';
 }
 .gedi-send:before {
-    content: "\f2cd";
+  content: '\f2cd';
 }
 .gedi-sensor-32:before {
-    content: "\f2ce";
+  content: '\f2ce';
 }
 .gedi-sequence-profile:before {
-    content: "\f2cf";
+  content: '\f2cf';
 }
 .gedi-settings-22:before {
-    content: "\f2d0";
+  content: '\f2d0';
 }
 .gedi-settings:before {
-    content: "\f2d1";
+  content: '\f2d1';
 }
 .gedi-share:before {
-    content: "\f2d2";
+  content: '\f2d2';
 }
 .gedi-show-users:before {
-    content: "\f2d3";
+  content: '\f2d3';
 }
 .gedi-show:before {
-    content: "\f2d4";
+  content: '\f2d4';
 }
 .gedi-shrink-radius-22:before {
-    content: "\f2d5";
+  content: '\f2d5';
 }
 .gedi-single-server:before {
-    content: "\f2d6";
+  content: '\f2d6';
 }
 .gedi-sitemap:before {
-    content: "\f2d7";
+  content: '\f2d7';
 }
 .gedi-skip-32:before {
-    content: "\f2d8";
+  content: '\f2d8';
 }
 .gedi-skip:before {
-    content: "\f2d9";
+  content: '\f2d9';
 }
 .gedi-skipped-measurement:before {
-    content: "\f2da";
+  content: '\f2da';
 }
 .gedi-sms-32:before {
-    content: "\f2db";
+  content: '\f2db';
 }
 .gedi-solar-panel-32:before {
-    content: "\f2dc";
+  content: '\f2dc';
 }
 .gedi-sort:before {
-    content: "\f2dd";
+  content: '\f2dd';
 }
 .gedi-sound:before {
-    content: "\f2de";
+  content: '\f2de';
 }
 .gedi-splitter:before {
-    content: "\f2df";
+  content: '\f2df';
 }
 .gedi-square:before {
-    content: "\f2e0";
+  content: '\f2e0';
 }
 .gedi-standalone-recommendation:before {
-    content: "\f2e1";
+  content: '\f2e1';
 }
 .gedi-starts-with:before {
-    content: "\f2e2";
+  content: '\f2e2';
 }
 .gedi-status-action-pending:before {
-    content: "\f2e3";
+  content: '\f2e3';
 }
 .gedi-status-adaptation-deferred:before {
-    content: "\f2e4";
+  content: '\f2e4';
 }
 .gedi-status-adaptation-in-progress:before {
-    content: "\f2e5";
+  content: '\f2e5';
 }
 .gedi-status-adaptation-pending:before {
-    content: "\f2e6";
+  content: '\f2e6';
 }
 .gedi-status-assigned:before {
-    content: "\f2e7";
+  content: '\f2e7';
 }
 .gedi-status-cancel:before {
-    content: "\f2e8";
+  content: '\f2e8';
 }
 .gedi-status-deferred:before {
-    content: "\f2e9";
+  content: '\f2e9';
 }
 .gedi-status-disabled:before {
-    content: "\f2ea";
+  content: '\f2ea';
 }
 .gedi-status-escalated:before {
-    content: "\f2eb";
+  content: '\f2eb';
 }
 .gedi-status-investigating:before {
-    content: "\f2ec";
+  content: '\f2ec';
 }
 .gedi-status-maintenance:before {
-    content: "\f2ed";
+  content: '\f2ed';
 }
 .gedi-status-new:before {
-    content: "\f2ee";
+  content: '\f2ee';
 }
 .gedi-status-stopped:before {
-    content: "\f2ef";
+  content: '\f2ef';
 }
 .gedi-steam-turbine-32:before {
-    content: "\f2f0";
+  content: '\f2f0';
 }
 .gedi-step-strategy:before {
-    content: "\f2f1";
+  content: '\f2f1';
 }
 .gedi-step-template:before {
-    content: "\f2f2";
+  content: '\f2f2';
 }
 .gedi-step:before {
-    content: "\f2f3";
+  content: '\f2f3';
 }
 .gedi-stop:before {
-    content: "\f2f4";
+  content: '\f2f4';
 }
 .gedi-sub-policy:before {
-    content: "\f2f5";
+  content: '\f2f5';
 }
 .gedi-subscribe:before {
-    content: "\f2f6";
+  content: '\f2f6';
 }
 .gedi-subsystem:before {
-    content: "\f2f7";
+  content: '\f2f7';
 }
 .gedi-subtract:before {
-    content: "\f2f8";
+  content: '\f2f8';
 }
 .gedi-sum:before {
-    content: "\f2f9";
+  content: '\f2f9';
 }
 .gedi-switch:before {
-    content: "\f2fa";
+  content: '\f2fa';
 }
 .gedi-syncing:before {
-    content: "\f2fb";
+  content: '\f2fb';
 }
 .gedi-table-sort:before {
-    content: "\f2fc";
+  content: '\f2fc';
 }
 .gedi-table-view:before {
-    content: "\f2fd";
+  content: '\f2fd';
 }
 .gedi-tablet:before {
-    content: "\f2fe";
+  content: '\f2fe';
 }
 .gedi-tag-12:before {
-    content: "\f2ff";
+  content: '\f2ff';
 }
 .gedi-tag-22:before {
-    content: "\f300";
+  content: '\f300';
 }
 .gedi-tag-32:before {
-    content: "\f301";
+  content: '\f301';
 }
 .gedi-tag-group-12:before {
-    content: "\f302";
+  content: '\f302';
 }
 .gedi-tag-group-22:before {
-    content: "\f303";
+  content: '\f303';
 }
 .gedi-tag-group-32:before {
-    content: "\f304";
+  content: '\f304';
 }
 .gedi-tag-group:before {
-    content: "\f305";
+  content: '\f305';
 }
 .gedi-tag-search:before {
-    content: "\f306";
+  content: '\f306';
 }
 .gedi-tag-smart:before {
-    content: "\f307";
+  content: '\f307';
 }
 .gedi-tag-visibility:before {
-    content: "\f308";
+  content: '\f308';
 }
 .gedi-tag:before {
-    content: "\f309";
+  content: '\f309';
 }
 .gedi-team-member-shift-left:before {
-    content: "\f30a";
+  content: '\f30a';
 }
 .gedi-team-member-shift-right:before {
-    content: "\f30b";
+  content: '\f30b';
 }
 .gedi-template:before {
-    content: "\f30c";
+  content: '\f30c';
 }
 .gedi-templates-32:before {
-    content: "\f30d";
+  content: '\f30d';
 }
 .gedi-textformat-aligncenter:before {
-    content: "\f30e";
+  content: '\f30e';
 }
 .gedi-textformat-alignjustify:before {
-    content: "\f30f";
+  content: '\f30f';
 }
 .gedi-textformat-alignleft:before {
-    content: "\f310";
+  content: '\f310';
 }
 .gedi-textformat-alignright:before {
-    content: "\f311";
+  content: '\f311';
 }
 .gedi-textformat-bold:before {
-    content: "\f312";
+  content: '\f312';
 }
 .gedi-textformat-italic:before {
-    content: "\f313";
+  content: '\f313';
 }
 .gedi-textformat-listordered:before {
-    content: "\f314";
+  content: '\f314';
 }
 .gedi-textformat-listunordered:before {
-    content: "\f315";
+  content: '\f315';
 }
 .gedi-textformat-rteditor:before {
-    content: "\f316";
+  content: '\f316';
 }
 .gedi-textformat-strike:before {
-    content: "\f317";
+  content: '\f317';
 }
 .gedi-textformat-textcolor:before {
-    content: "\f318";
+  content: '\f318';
 }
 .gedi-textformat-underline:before {
-    content: "\f319";
+  content: '\f319';
 }
 .gedi-threshold-statistics:before {
-    content: "\f31a";
+  content: '\f31a';
 }
 .gedi-time-32:before {
-    content: "\f31b";
+  content: '\f31b';
 }
 .gedi-time-series-tag:before {
-    content: "\f31c";
+  content: '\f31c';
 }
 .gedi-time-units:before {
-    content: "\f31d";
+  content: '\f31d';
 }
 .gedi-timezone:before {
-    content: "\f31e";
+  content: '\f31e';
 }
 .gedi-tm-data-entry:before {
-    content: "\f31f";
+  content: '\f31f';
 }
 .gedi-train-32:before {
-    content: "\f320";
+  content: '\f320';
 }
 .gedi-translation:before {
-    content: "\f321";
+  content: '\f321';
 }
 .gedi-transpose:before {
-    content: "\f322";
+  content: '\f322';
 }
 .gedi-tree-collapse:before {
-    content: "\f323";
+  content: '\f323';
 }
 .gedi-tree-expand:before {
-    content: "\f324";
+  content: '\f324';
 }
 .gedi-truck-32:before {
-    content: "\f325";
+  content: '\f325';
 }
 .gedi-type:before {
-    content: "\f326";
+  content: '\f326';
 }
 .gedi-unconsolidate:before {
-    content: "\f327";
+  content: '\f327';
 }
 .gedi-undo:before {
-    content: "\f328";
+  content: '\f328';
 }
 .gedi-ungrouped-tab-group:before {
-    content: "\f329";
+  content: '\f329';
 }
 .gedi-unlink:before {
-    content: "\f32a";
+  content: '\f32a';
 }
 .gedi-unlocked:before {
-    content: "\f32b";
+  content: '\f32b';
 }
 .gedi-unmerge:before {
-    content: "\f32c";
+  content: '\f32c';
 }
 .gedi-unpin:before {
-    content: "\f32d";
+  content: '\f32d';
 }
 .gedi-uom:before {
-    content: "\f32e";
+  content: '\f32e';
 }
 .gedi-upload:before {
-    content: "\f32f";
+  content: '\f32f';
 }
 .gedi-user-add:before {
-    content: "\f330";
+  content: '\f330';
 }
 .gedi-user-hierarchy:before {
-    content: "\f331";
+  content: '\f331';
 }
 .gedi-user-key:before {
-    content: "\f332";
+  content: '\f332';
 }
 .gedi-user-not-allowed:before {
-    content: "\f333";
+  content: '\f333';
 }
 .gedi-user-remove:before {
-    content: "\f334";
+  content: '\f334';
 }
 .gedi-user-reset:before {
-    content: "\f335";
+  content: '\f335';
 }
 .gedi-user-settings:before {
-    content: "\f336";
+  content: '\f336';
 }
 .gedi-user-verified:before {
-    content: "\f337";
+  content: '\f337';
 }
 .gedi-user:before {
-    content: "\f338";
+  content: '\f338';
 }
 .gedi-users-32:before {
-    content: "\f339";
+  content: '\f339';
 }
 .gedi-users:before {
-    content: "\f33a";
+  content: '\f33a';
 }
 .gedi-versions-32:before {
-    content: "\f33b";
+  content: '\f33b';
 }
 .gedi-view-datasheet:before {
-    content: "\f33c";
+  content: '\f33c';
 }
 .gedi-view-inbox:before {
-    content: "\f33d";
+  content: '\f33d';
 }
 .gedi-view-list:before {
-    content: "\f33e";
+  content: '\f33e';
 }
 .gedi-view-recommendation-32:before {
-    content: "\f33f";
+  content: '\f33f';
 }
 .gedi-website:before {
-    content: "\f340";
+  content: '\f340';
 }
 .gedi-wind-turbine-32:before {
-    content: "\f341";
+  content: '\f341';
 }
 .gedi-x-axis-22:before {
-    content: "\f342";
+  content: '\f342';
 }
 .gedi-x-axis:before {
-    content: "\f343";
+  content: '\f343';
 }
 .gedi-xy-axis-22:before {
-    content: "\f344";
+  content: '\f344';
 }
 .gedi-xy-axis:before {
-    content: "\f345";
+  content: '\f345';
 }
 .gedi-y-axis-22:before {
-    content: "\f346";
+  content: '\f346';
 }
 .gedi-y-axis:before {
-    content: "\f347";
+  content: '\f347';
 }
 .gedi-zoom-generic-22:before {
-    content: "\f348";
+  content: '\f348';
 }
 .gedi-zoom-in-22:before {
-    content: "\f349";
+  content: '\f349';
 }
 .gedi-zoom-in:before {
-    content: "\f34a";
+  content: '\f34a';
 }
 .gedi-zoom-out-22:before {
-    content: "\f34b";
+  content: '\f34b';
 }
 .gedi-zoom-out-one-level-22:before {
-    content: "\f34c";
+  content: '\f34c';
 }
 .gedi-zoom-out:before {
-    content: "\f34d";
+  content: '\f34d';
 }
 .gedi-zoom-toolbar-22:before {
-    content: "\f34e";
+  content: '\f34e';
 }

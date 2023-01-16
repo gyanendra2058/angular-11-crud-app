@@ -77,7 +77,7 @@ export class AppComponent implements OnInit {
     this.container.createComponent(factory);
   }
 
-  private async loadModuleFactory(t: any) : Promise<any> {
+  private async loadModuleFactory(t: any): Promise<any> {
     if (t instanceof NgModuleFactory) {
       return t;
     } else {

@@ -23,7 +23,7 @@ logger.init(
 const app = express();
 
 const port = process.env.PORT || 3004;
-const appName = 'Templates Microapp v2';
+const appName = 'Templates MicroApp v2';
 
 async function bootStrapApp() {
   const setCacheControl = (res: Response) => {

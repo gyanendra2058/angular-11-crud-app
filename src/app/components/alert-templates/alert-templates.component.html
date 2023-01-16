@@ -1,13 +1,13 @@
 <div class="container">
-    <span class="">{{'template.list.header.title.alert' | translate}}</span>
+  <span class="">{{ 'template.list.header.title.alert' | translate }}</span>
 
-    <aux-datagrid #alertTemplates
-        [attr.hascolumnchooser]="'true'"
-        [attr.allowColumnResizing]="'true'"
-        [attr.pagesize]="50"
-        [attr.showgroupingpanel]="'false'"
-        [attr.columnChooserMode]="'select'"
-        [attr.showrowfilter]="'true'"
-        [attr.showTextForColumnChooserButton]="'true'"
-    ></aux-datagrid>
+  <aux-datagrid
+    #alertTemplates
+    [attr.hascolumnchooser]="'true'"
+    [attr.allowColumnResizing]="'true'"
+    [attr.showgroupingpanel]="'false'"
+    [attr.showrowfilter]="'true'"
+    [attr.isRowFilterOpened]="'true'"
+    [attr.showTextForColumnChooserButton]="'true'"
+  ></aux-datagrid>
 </div>

@@ -4,4 +4,20 @@
     "source.fixAll.eslint": true
   },
   "markdown.extension.toc.levels": "2..3",
+  "cSpell.words": [
+    "datagrid",
+    "datetime",
+    "devkit",
+    "hascolumnchooser",
+    "immer",
+    "logdown",
+    "ngxs",
+    "predix",
+    "showgroupingpanel",
+    "showrowfilter",
+    "signalfx",
+    "vcap",
+    "webcomponents",
+    "webcomponentsjs"
+  ]
 }
