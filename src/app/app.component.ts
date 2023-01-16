@@ -38,9 +38,9 @@ export class AppComponent implements OnInit {
   private async _loadTemplatesModuleDynamically(routeEvent: Event): Promise<void> {
     if (routeEvent instanceof NavigationEnd) {
       if (routeEvent.url === '/#/alerts') {
-        await this._loadAlertTemplatesModule()
+        await this._loadAlertTemplatesModule();
       } else if (routeEvent.url === '/#/cases') {
-        await this._loadCaseTemplatesModule()
+        await this._loadCaseTemplatesModule();
       } else {
         // TODO: Load page not found
       }
