@@ -27,8 +27,8 @@ interface DataGridComponent extends HTMLElement {
 })
 export class AlertTemplatesComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('alertTemplates') datagridComponentRef!: ElementRef<DataGridComponent>;
-  datagridComponent!: DataGridComponent;
-  gridDataSource!: DataSource | null;
+  datagridComponent!: DataGridComponent
+  gridDataSource!: DataSource | null
   private readonly destroy$ = new Subject();
 
   constructor(private renderer: Renderer2, private _gridDataSource: TemplatesGridDataSource) {}
