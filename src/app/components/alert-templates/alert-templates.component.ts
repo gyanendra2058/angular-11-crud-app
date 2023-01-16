@@ -171,7 +171,6 @@ export class AlertTemplatesComponent implements OnInit, AfterViewInit, OnDestroy
   }
 
   ngOnDestroy(): void {
-    console.log('test');
     this._gridDataSource.clearDS();
     this.destroy$.next();
     this.destroy$.complete();
