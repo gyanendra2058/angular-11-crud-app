@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
 
   @Dispatch() getDynamicCollections = (lang: string): unknown => new GetDynamicCollections(lang);
   ngOnInit(): void {
-    this.getDynamicCollections('en-US');
+    this.getDynamicCollections('en-US')
   }
 
   private async _loadTemplatesModuleDynamically(routeEvent: Event): Promise<void> {

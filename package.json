@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier:check"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,css,html}": [
+      "npm run prettier:check"
+    ]
   },
   "scripts": {
     "ng": "ng",
